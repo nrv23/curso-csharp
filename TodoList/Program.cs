@@ -172,16 +172,19 @@ bool IsLong(string input)
 //Parsing a string to an int
 //###################
 string numberAsText = "123";
+bool randomNumber = int.TryParse(numberAsText, out int result);
 
-do
+
+// while loop
+
+int count = 0;
+while(count < 10)
 {
+    Console.WriteLine(count);
+    count++;
+}
 
 
-    Console.WriteLine("Dame un numero: ");
-    //int 
-    //int randomNumber = int.TryParse(numberAsText, out number);
-
-} while (numberAsText.Length > 0);
 
 
 Console.ReadKey();
