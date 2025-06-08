@@ -1,0 +1,23 @@
+C# no permite comillas simples
+C# no permite el uso de variables declaradas pero sin ningun valor asignado
+
+los nombres de las variables en C# deben Lower CamelCase, ejemplo isValidPurchaseId
+
+Nombres de funciones siempre deben ser UpperCase
+
+las variables que se declaran con var debe inicializar un valor sino dará un error de compilacion, porque su tipo de dato es inferido
+
+Al ser c# un lenguaje compilado, su comparacion de valores iguales es == o !=
+
+En una expresion Or donde la primera condicion da true, las demás condiciones or no se validan para ejecutar mas rapido el codigo
+
+las switch expression de c# pueden funcionar tambien con patrones de comparacion 
+
+return points switch // esto funciona como sl switch pero reducido 
+            {
+                >= 90 => 'A',
+                >= 80 => 'B',
+                >= 70 => 'C',
+                >= 60 => 'D',
+                _ => '!' // el valor _ representa el default case en el switch
+            };

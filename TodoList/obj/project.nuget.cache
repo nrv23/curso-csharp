@@ -1,0 +1,13 @@
+{
+  "version": 2,
+  "dgSpecHash": "tTgmToh38ne2AD+qrtMZLx4fX4yAM+6DX55N154xQv6kko2MV0Gr1ppIP2WODKsnm9PvhFEny4s6AjLfHEMuSg==",
+  "success": true,
+  "projectFilePath": "C:\\Users\\navem\\source\\repos\\TodoList\\ToDoList\\Fundamentals.csproj",
+  "expectedPackageFiles": [
+    "C:\\Users\\navem\\.nuget\\packages\\microsoft.windowsdesktop.app.ref\\7.0.20\\microsoft.windowsdesktop.app.ref.7.0.20.nupkg.sha512",
+    "C:\\Users\\navem\\.nuget\\packages\\microsoft.netcore.app.ref\\7.0.20\\microsoft.netcore.app.ref.7.0.20.nupkg.sha512",
+    "C:\\Users\\navem\\.nuget\\packages\\microsoft.aspnetcore.app.ref\\7.0.20\\microsoft.aspnetcore.app.ref.7.0.20.nupkg.sha512",
+    "C:\\Users\\navem\\.nuget\\packages\\microsoft.netcore.app.host.win-x64\\7.0.20\\microsoft.netcore.app.host.win-x64.7.0.20.nupkg.sha512"
+  ],
+  "logs": []
+}

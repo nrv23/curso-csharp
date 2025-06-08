@@ -1,0 +1,14 @@
+C:\Users\navem\source\repos\ToDoList\ToDoList\bin\Debug\net7.0\Fundamentals.exe
+C:\Users\navem\source\repos\ToDoList\ToDoList\bin\Debug\net7.0\Fundamentals.deps.json
+C:\Users\navem\source\repos\ToDoList\ToDoList\bin\Debug\net7.0\Fundamentals.runtimeconfig.json
+C:\Users\navem\source\repos\ToDoList\ToDoList\bin\Debug\net7.0\Fundamentals.dll
+C:\Users\navem\source\repos\ToDoList\ToDoList\bin\Debug\net7.0\Fundamentals.pdb
+C:\Users\navem\source\repos\ToDoList\ToDoList\obj\Debug\net7.0\Fundamentals.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\navem\source\repos\ToDoList\ToDoList\obj\Debug\net7.0\Fundamentals.AssemblyInfoInputs.cache
+C:\Users\navem\source\repos\ToDoList\ToDoList\obj\Debug\net7.0\Fundamentals.AssemblyInfo.cs
+C:\Users\navem\source\repos\ToDoList\ToDoList\obj\Debug\net7.0\Fundamentals.csproj.CoreCompileInputs.cache
+C:\Users\navem\source\repos\ToDoList\ToDoList\obj\Debug\net7.0\Fundamentals.dll
+C:\Users\navem\source\repos\ToDoList\ToDoList\obj\Debug\net7.0\refint\Fundamentals.dll
+C:\Users\navem\source\repos\ToDoList\ToDoList\obj\Debug\net7.0\Fundamentals.pdb
+C:\Users\navem\source\repos\ToDoList\ToDoList\obj\Debug\net7.0\Fundamentals.genruntimeconfig.cache
+C:\Users\navem\source\repos\ToDoList\ToDoList\obj\Debug\net7.0\ref\Fundamentals.dll
