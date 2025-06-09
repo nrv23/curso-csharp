@@ -1,0 +1,13 @@
+{
+  "version": 2,
+  "dgSpecHash": "MS0LPET4P7RtRDY5yGRigSQja4wxLAG/ckqr4zzlRaFhKlC468TIEAhFmgZcV0UZyvx/1yTt1FsM3qOo4d5I+g==",
+  "success": true,
+  "projectFilePath": "C:\\Users\\navem\\source\\repos\\TodoList\\IsWordPresentinCollection\\IsWordPresentinCollection.csproj",
+  "expectedPackageFiles": [
+    "C:\\Users\\navem\\.nuget\\packages\\microsoft.windowsdesktop.app.ref\\7.0.20\\microsoft.windowsdesktop.app.ref.7.0.20.nupkg.sha512",
+    "C:\\Users\\navem\\.nuget\\packages\\microsoft.netcore.app.ref\\7.0.20\\microsoft.netcore.app.ref.7.0.20.nupkg.sha512",
+    "C:\\Users\\navem\\.nuget\\packages\\microsoft.aspnetcore.app.ref\\7.0.20\\microsoft.aspnetcore.app.ref.7.0.20.nupkg.sha512",
+    "C:\\Users\\navem\\.nuget\\packages\\microsoft.netcore.app.host.win-x64\\7.0.20\\microsoft.netcore.app.host.win-x64.7.0.20.nupkg.sha512"
+  ],
+  "logs": []
+}

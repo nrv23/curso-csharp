@@ -12,3 +12,4 @@ C:\Users\navem\source\repos\ToDoList\ToDoList\obj\Debug\net7.0\refint\Fundamenta
 C:\Users\navem\source\repos\ToDoList\ToDoList\obj\Debug\net7.0\Fundamentals.pdb
 C:\Users\navem\source\repos\ToDoList\ToDoList\obj\Debug\net7.0\Fundamentals.genruntimeconfig.cache
 C:\Users\navem\source\repos\ToDoList\ToDoList\obj\Debug\net7.0\ref\Fundamentals.dll
+C:\Users\navem\source\repos\TodoList\ToDoList\obj\Debug\net7.0\Fundamentals.sourcelink.json

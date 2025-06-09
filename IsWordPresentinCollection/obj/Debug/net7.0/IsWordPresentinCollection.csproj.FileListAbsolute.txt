@@ -1,0 +1,15 @@
+C:\Users\navem\source\repos\TodoList\IsWordPresentinCollection\bin\Debug\net7.0\IsWordPresentinCollection.exe
+C:\Users\navem\source\repos\TodoList\IsWordPresentinCollection\bin\Debug\net7.0\IsWordPresentinCollection.deps.json
+C:\Users\navem\source\repos\TodoList\IsWordPresentinCollection\bin\Debug\net7.0\IsWordPresentinCollection.runtimeconfig.json
+C:\Users\navem\source\repos\TodoList\IsWordPresentinCollection\bin\Debug\net7.0\IsWordPresentinCollection.dll
+C:\Users\navem\source\repos\TodoList\IsWordPresentinCollection\bin\Debug\net7.0\IsWordPresentinCollection.pdb
+C:\Users\navem\source\repos\TodoList\IsWordPresentinCollection\obj\Debug\net7.0\IsWordPresentinCollection.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\navem\source\repos\TodoList\IsWordPresentinCollection\obj\Debug\net7.0\IsWordPresentinCollection.AssemblyInfoInputs.cache
+C:\Users\navem\source\repos\TodoList\IsWordPresentinCollection\obj\Debug\net7.0\IsWordPresentinCollection.AssemblyInfo.cs
+C:\Users\navem\source\repos\TodoList\IsWordPresentinCollection\obj\Debug\net7.0\IsWordPresentinCollection.csproj.CoreCompileInputs.cache
+C:\Users\navem\source\repos\TodoList\IsWordPresentinCollection\obj\Debug\net7.0\IsWordPresentinCollection.sourcelink.json
+C:\Users\navem\source\repos\TodoList\IsWordPresentinCollection\obj\Debug\net7.0\IsWordPresentinCollection.dll
+C:\Users\navem\source\repos\TodoList\IsWordPresentinCollection\obj\Debug\net7.0\refint\IsWordPresentinCollection.dll
+C:\Users\navem\source\repos\TodoList\IsWordPresentinCollection\obj\Debug\net7.0\IsWordPresentinCollection.pdb
+C:\Users\navem\source\repos\TodoList\IsWordPresentinCollection\obj\Debug\net7.0\IsWordPresentinCollection.genruntimeconfig.cache
+C:\Users\navem\source\repos\TodoList\IsWordPresentinCollection\obj\Debug\net7.0\ref\IsWordPresentinCollection.dll

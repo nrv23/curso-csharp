@@ -21,3 +21,16 @@ return points switch // esto funciona como sl switch pero reducido
                 >= 60 => 'D',
                 _ => '!' // el valor _ representa el default case en el switch
             };
+
+la instruccion break rompe la ejecucion de un switch o un ciclo for donde una condicion ya no se cumplio.
+
+La instruccion continue, inicia la siguiente iteracion de un ciclo. Esto evita iterar un ciclo completamente si una condicion no se cumple
+
+var letters2 = new char[,]
+{
+    {'A', 'B','C' },
+    {'D', 'E','F' },
+};
+
+var height = letters.GetLength(0); // obtiene el tamaño de un array dependiendo de la dimension
+var width = letters.GetLength(1);
