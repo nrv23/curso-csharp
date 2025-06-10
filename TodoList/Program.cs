@@ -344,7 +344,63 @@ for (int i = 0; i < height; i++)
 }
 
 
+//###################
+//Foreach loop
+//###################
+var words = new string[] { "one", "two", "three" };
+foreach (var word12 in words)
+{
+    Console.WriteLine(word12);
+}
+
 
 Console.WriteLine(RepeatCharacter('a', 4));
+
+
+
+
+//###################
+//Lists
+//###################
+var someWords = new List<string>
+{
+    "one", "two"
+};
+someWords.Add("three");
+someWords.AddRange(new[] { "four", "five" });
+someWords.Remove("three");
+someWords.RemoveAt(0);
+var indexOfFive = someWords.IndexOf("five");
+bool containsOne = someWords.Contains("one");
+someWords.Clear();
+
+
+
+//###################
+//Out parameter
+//###################
+var variousNumbers = new int[] { 10, -8, 2, 12, -17 };
+int countOfNonPositiveNumbers;
+var onlyPositive = GetOnlyPositive(
+    numbers, out countOfNonPositiveNumbers);
+
+List<int> GetOnlyPositive(
+    int[] numbers, out int countOfNonPositive)
+{
+    var result = new List<int>();
+    countOfNonPositive = 0;
+    foreach (var number in numbers)
+    {
+        if (number > 0)
+        {
+            result.Add(number);
+        }
+        else
+        {
+            ++countOfNonPositive;
+        }
+    }
+    return result;
+}
 
 Console.ReadKey();

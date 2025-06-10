@@ -14,7 +14,7 @@ using System.Reflection;
 [assembly: System.Reflection.AssemblyCompanyAttribute("IsWordPresentinCollection")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Debug")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+6d485dc7a65b1fb33db7d7908e47e1f362628879")]
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+f5612674869695f3e2e2ff3e9d03b1c8628d3d33")]
 [assembly: System.Reflection.AssemblyProductAttribute("IsWordPresentinCollection")]
 [assembly: System.Reflection.AssemblyTitleAttribute("IsWordPresentinCollection")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]

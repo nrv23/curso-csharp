@@ -48,4 +48,30 @@ for (int i = 0; i < height; i++)
 }
 
 
+//###################
+//Foreach loop
+//###################
+var words = new string[] { "23", "23", "23" };
+foreach (var word in words)
+{
+    Console.WriteLine(word);
+}
+
+
+bool IsAnyWordLongerThan(int length, string[] words)
+{
+    bool result = false;
+
+    foreach (var word in words)
+    {
+        if(word.Length > length) result = true;
+        continue;
+    }
+
+    return result;
+}
+
+
+Console.WriteLine($"IsAnyWordLongerThan {IsAnyWordLongerThan(2, words)}");
+
 Console.ReadKey();
