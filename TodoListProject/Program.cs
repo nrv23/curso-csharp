@@ -9,7 +9,7 @@ string userInput;
 bool isValidInput;
 int idx;
 bool result;
-List<string> list;
+List<string> list = new List<string>();
 string currentTodo;
 
 ValidatorUserInput validator = new ValidatorUserInput();
@@ -57,41 +57,60 @@ void main ()
 
                     Console.WriteLine("Enter todo:");
                     userInput = Console.ReadLine();
-                    result = todoList.AddTodo(userInput);
 
-                    if (!result)
+                    list = todoList.GetAllTodos();
+
+                    if(list.Contains(userInput))
                     {
-                        Console.WriteLine("No se pudo agregar el todo");
-                    }
-                    else
+                        Console.WriteLine("Ya existe un todo con esa descripcion");
+                    } else
                     {
-                        Console.WriteLine("Se agregó el todo con éxito");
+                        result = todoList.AddTodo(userInput);
+
+                        if (!result)
+                        {
+                            Console.WriteLine("No se pudo agregar el todo");
+                        }
+                        else
+                        {
+                            Console.WriteLine("Se agregó el todo con éxito");
+                        }
                     }
+                    
 
                     break;
                 case 'r':
 
-                    Console.WriteLine(" Enter todo index");
-                    userInput = Console.ReadLine();
-                    idx = isValidIndex(userInput);
-                    if (idx == 0)
+                    if(list.Count == 0)
                     {
-                        Console.WriteLine("indice inválido");
-                        return;
-                    }
-                    else
+                        Console.WriteLine("No hay todos en la lista");
+                    } else
                     {
-                        result = todoList.RemoveTodo(idx - 1);
+                        Console.WriteLine(" Enter todo index");
+                        userInput = Console.ReadLine();
+                        idx = isValidIndex(userInput);
+                        if (idx == 0)
+                        {
+                            Console.WriteLine("indice inválido");
+                        }
+                        else
+                        {
+                            result = todoList.RemoveTodo(idx - 1);
 
-                        if (result) Console.WriteLine("Se ha eliminado el todo");
-                        else Console.WriteLine("El índice no existe");
+                            if (result) Console.WriteLine("Se ha eliminado el todo");
+                            else Console.WriteLine("El índice no existe");
+                        }
                     }
+
+                    
                     break;
 
                 case 'l':
                     list = todoList.GetAllTodos();
                     if (list.Count == 0) Console.WriteLine("No hay todos en la lista");
-                    foreach (var todo in list) Console.WriteLine(todo);
+                    list.Select((value, index) => $"[{index + 1}] {value}")
+                        .ToList()
+                        .ForEach(Console.WriteLine);
                     break;
                 case 'g':
                     Console.WriteLine(" Enter todo index");
@@ -100,7 +119,7 @@ void main ()
                     if (idx == 0)
                     {
                         Console.WriteLine("indice inválido");
-                    }
+                    }  
                     else
                     {
                         Console.WriteLine(todoList.GetTodoById(idx - 1));

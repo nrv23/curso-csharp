@@ -32,8 +32,10 @@ namespace TodoListProject.classes
 
         public List<string> GetAllTodos()
         {
-            return this._items.Select((value, index) => $"[{index+1}] {value}")
-                .ToList();
+           // return this._items.Select((value, index) => $"[{index+1}] {value}")
+                //.ToList();
+
+            return _items;
         }
 
         public string GetTodoById(int idx)
