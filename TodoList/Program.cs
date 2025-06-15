@@ -381,8 +381,7 @@ someWords.Clear();
 //###################
 var variousNumbers = new int[] { 10, -8, 2, 12, -17 };
 int countOfNonPositiveNumbers;
-var onlyPositive = GetOnlyPositive(
-    numbers, out countOfNonPositiveNumbers);
+
 
 List<int> GetOnlyPositive(
     int[] numbers, out int countOfNonPositive)
@@ -402,5 +401,14 @@ List<int> GetOnlyPositive(
     }
     return result;
 }
+
+
+var onlyPositive = GetOnlyPositive(
+    numbers, out countOfNonPositiveNumbers);
+
+Console.WriteLine($"Lista de numeros positivos {onlyPositive}");
+Console.WriteLine($"Conteo de numeros negativos {countOfNonPositiveNumbers}");
+
+
 
 Console.ReadKey();

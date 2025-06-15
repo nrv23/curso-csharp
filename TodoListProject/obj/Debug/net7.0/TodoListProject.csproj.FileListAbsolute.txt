@@ -1,0 +1,15 @@
+C:\Users\navem\source\repos\TodoList\TodoListProject\bin\Debug\net7.0\TodoListProject.exe
+C:\Users\navem\source\repos\TodoList\TodoListProject\bin\Debug\net7.0\TodoListProject.deps.json
+C:\Users\navem\source\repos\TodoList\TodoListProject\bin\Debug\net7.0\TodoListProject.runtimeconfig.json
+C:\Users\navem\source\repos\TodoList\TodoListProject\bin\Debug\net7.0\TodoListProject.dll
+C:\Users\navem\source\repos\TodoList\TodoListProject\bin\Debug\net7.0\TodoListProject.pdb
+C:\Users\navem\source\repos\TodoList\TodoListProject\obj\Debug\net7.0\TodoListProject.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\navem\source\repos\TodoList\TodoListProject\obj\Debug\net7.0\TodoListProject.AssemblyInfoInputs.cache
+C:\Users\navem\source\repos\TodoList\TodoListProject\obj\Debug\net7.0\TodoListProject.AssemblyInfo.cs
+C:\Users\navem\source\repos\TodoList\TodoListProject\obj\Debug\net7.0\TodoListProject.csproj.CoreCompileInputs.cache
+C:\Users\navem\source\repos\TodoList\TodoListProject\obj\Debug\net7.0\TodoListProject.sourcelink.json
+C:\Users\navem\source\repos\TodoList\TodoListProject\obj\Debug\net7.0\TodoListProject.dll
+C:\Users\navem\source\repos\TodoList\TodoListProject\obj\Debug\net7.0\refint\TodoListProject.dll
+C:\Users\navem\source\repos\TodoList\TodoListProject\obj\Debug\net7.0\TodoListProject.pdb
+C:\Users\navem\source\repos\TodoList\TodoListProject\obj\Debug\net7.0\TodoListProject.genruntimeconfig.cache
+C:\Users\navem\source\repos\TodoList\TodoListProject\obj\Debug\net7.0\ref\TodoListProject.dll

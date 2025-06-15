@@ -34,3 +34,5 @@ var letters2 = new char[,]
 
 var height = letters.GetLength(0); // obtiene el tamaño de un array dependiendo de la dimension
 var width = letters.GetLength(1);
+
+la palabra reservada out me permite retornar dos valores al mismo tiempo en un metodo, por ejemplo el int.tryParse(numero, out int esvalido)

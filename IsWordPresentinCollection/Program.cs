@@ -72,6 +72,63 @@ bool IsAnyWordLongerThan(int length, string[] words)
 }
 
 
+
 Console.WriteLine($"IsAnyWordLongerThan {IsAnyWordLongerThan(2, words)}");
+
+
+//###################
+//Out parameter
+//###################
+var numbers = new int[] { 1, 2, 4, 7, -2 };
+var variousNumbers = new int[] { 10, -8, 2, 12, -17 };
+int countOfNonPositiveNumbers;
+
+List<int> GetOnlyPositive(
+    int[] numbers, out int countOfNonPositive)
+{
+    var result = new List<int>();
+    countOfNonPositive = 0;
+    foreach (var number in numbers)
+    {
+        if (number > 0)
+        {
+            result.Add(number);
+        }
+        else
+        {
+            ++countOfNonPositive;
+        }
+    }
+    return result;
+}
+
+var onlyPositive = GetOnlyPositive(
+    numbers, out countOfNonPositiveNumbers);
+// el valor de tipo out es un valor de retorn de la funcion y el valor luego del return tambien es un retorno de la funcion
+
+Console.WriteLine($"numeros positivos {onlyPositive}");
+Console.WriteLine($"conteo negativos {countOfNonPositiveNumbers}");
+
+//###################
+//Out parameter
+//###################
+var userInput = Console.ReadLine();
+bool isParsed = int.TryParse(
+    userInput, out int userInputParsedToInt);
+if (isParsed)
+{
+    Console.WriteLine(
+        "Parsed successfully, the result is: " + userInputParsedToInt);
+}
+else
+{
+    Console.WriteLine(
+        $"Could not parse '{userInput}' to int");
+}
+
+
+
+
+
 
 Console.ReadKey();

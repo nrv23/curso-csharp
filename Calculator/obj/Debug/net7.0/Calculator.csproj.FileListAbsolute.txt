@@ -12,3 +12,4 @@ C:\Users\navem\source\repos\TodoList\Calculator\obj\Debug\net7.0\refint\Calculat
 C:\Users\navem\source\repos\TodoList\Calculator\obj\Debug\net7.0\Calculator.pdb
 C:\Users\navem\source\repos\TodoList\Calculator\obj\Debug\net7.0\Calculator.genruntimeconfig.cache
 C:\Users\navem\source\repos\TodoList\Calculator\obj\Debug\net7.0\ref\Calculator.dll
+C:\Users\navem\source\repos\TodoList\Calculator\obj\Debug\net7.0\Calculator.sourcelink.json
