@@ -97,8 +97,11 @@ void main ()
                         {
                             result = todoList.RemoveTodo(idx - 1);
 
-                            if (result) Console.WriteLine("Se ha eliminado el todo");
-                            else Console.WriteLine("El índice no existe");
+                            Console.WriteLine(
+                                result 
+                                ? "Se ha eliminado el todo" 
+                                : "El índice no existe"
+                            );
                         }
                     }
 
