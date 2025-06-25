@@ -1,0 +1,10 @@
+En C# si la clase no tiene un constructor explícito, el compilador crea uno por defecto. 
+Este constructor por defecto no toma parámetros y no realiza ninguna acción especial.
+Si defines un constructor personalizado, el compilador no generará el constructor por defecto.
+
+Los valores de tipo int n c# son inicializados a 0 por defecto si no se les asigna un valor explícito.
+
+las propiedades de una clase en c# sino se declaran como publicas, son privadas por defdcto
+
+en c# nombres de clases, properties y métodos deben comenzar con mayúscula,
+mientras que los campos privados suelen comenzar con minúscula o con un guion bajo.

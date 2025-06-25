@@ -1,0 +1,14 @@
+C:\Users\navem\source\repos\BasicOOP\BasicOOP\bin\Debug\net7.0\BasicOOP.exe
+C:\Users\navem\source\repos\BasicOOP\BasicOOP\bin\Debug\net7.0\BasicOOP.deps.json
+C:\Users\navem\source\repos\BasicOOP\BasicOOP\bin\Debug\net7.0\BasicOOP.runtimeconfig.json
+C:\Users\navem\source\repos\BasicOOP\BasicOOP\bin\Debug\net7.0\BasicOOP.dll
+C:\Users\navem\source\repos\BasicOOP\BasicOOP\bin\Debug\net7.0\BasicOOP.pdb
+C:\Users\navem\source\repos\BasicOOP\BasicOOP\obj\Debug\net7.0\BasicOOP.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\navem\source\repos\BasicOOP\BasicOOP\obj\Debug\net7.0\BasicOOP.AssemblyInfoInputs.cache
+C:\Users\navem\source\repos\BasicOOP\BasicOOP\obj\Debug\net7.0\BasicOOP.AssemblyInfo.cs
+C:\Users\navem\source\repos\BasicOOP\BasicOOP\obj\Debug\net7.0\BasicOOP.csproj.CoreCompileInputs.cache
+C:\Users\navem\source\repos\BasicOOP\BasicOOP\obj\Debug\net7.0\BasicOOP.dll
+C:\Users\navem\source\repos\BasicOOP\BasicOOP\obj\Debug\net7.0\refint\BasicOOP.dll
+C:\Users\navem\source\repos\BasicOOP\BasicOOP\obj\Debug\net7.0\BasicOOP.pdb
+C:\Users\navem\source\repos\BasicOOP\BasicOOP\obj\Debug\net7.0\BasicOOP.genruntimeconfig.cache
+C:\Users\navem\source\repos\BasicOOP\BasicOOP\obj\Debug\net7.0\ref\BasicOOP.dll
