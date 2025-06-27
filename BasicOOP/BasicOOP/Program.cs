@@ -1,5 +1,6 @@
 ﻿
 using BasicOOP.clasess;
+using BasicOOP.exercises;
 
 var internationPizzaDay23 = new DateTime(2023, 9, 2,12,34,11);   
 
@@ -15,6 +16,15 @@ Console.WriteLine($"International Pizza Day 2024: {internationPizzaDay23Plus1}")
 
 var rectangle = new Rectangle(6, 20);
 var calculator = new ShapesMeasurementsCalcultator();
+var person = new Person
+{
+    Name = "John Doe",
+    YearOfBirth = 1990
+};
+person.Name = "Jane Doe"; // Using property to set name
+//person.YearOfBirth = 1985; // Using init-only property to set year of birth
+rectangle.Width = -1; // Using property to set width
+//rectangle.Height = -1; // Using property to set width
 
 Console.WriteLine($"Rectangle created with width: {rectangle.Width} and height: {rectangle.Height}");
 

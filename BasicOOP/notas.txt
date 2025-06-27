@@ -8,3 +8,29 @@ las propiedades de una clase en c# sino se declaran como publicas, son privadas 
 
 en c# nombres de clases, properties y métodos deben comenzar con mayúscula,
 mientras que los campos privados suelen comenzar con minúscula o con un guion bajo.
+
+nameof(this.Height) la funcion nameof devuelve el nombre de la propiedad como una cadena de texto.
+
+readonynly es un modificador que indica que una propiedad o campo no puede ser modificado después de su inicialización.
+Pero permite modificar esos valores en el constructor de la clase.
+
+variables de tipo const no pueden ser modificadas una vez que se les asigna un valor inicial. Y no se pueden declara como var.
+
+diferencia entre campos const y readonly es que los campos const deben ser inicializados en el momento de su declaración y no pueden cambiar, mientras que los campos readonly 
+pueden ser inicializados en el constructor de la clase y pueden depender de otros valores. Pero luego de ser inicializados, tampoco pueden ser modificados.
+
+Al usar campos privados, se recomienda usar propiedades públicas para acceder a ellos, con get y set, para mantener el encapsulamiento y permitir un control más fino sobre cómo se accede y modifica el valor.
+
+si la clase no tiene un constructor definido, se puede inicializar una instancia de clase 
+usando objetos :
+
+var person = new Person
+{
+    Name = "John Doe",
+    YearOfBirth = 1990,
+};
+
+No es necesario setear todos, el compilador asignará los valores por defecto a las propiedades que no se hayan inicializado explícitamente.
+inicializar con objetos funciona si el set proterty es público.
+
+el property init permite establecer el valor de una propiedad solo durante la inicialización del objeto, una vez que el objeto ha sido creado, la propiedad no puede ser modificada.
