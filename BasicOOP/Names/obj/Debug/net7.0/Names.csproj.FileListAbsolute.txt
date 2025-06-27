@@ -1,0 +1,15 @@
+C:\Users\navem\source\repos\TodoList\BasicOOP\Names\bin\Debug\net7.0\Names.exe
+C:\Users\navem\source\repos\TodoList\BasicOOP\Names\bin\Debug\net7.0\Names.deps.json
+C:\Users\navem\source\repos\TodoList\BasicOOP\Names\bin\Debug\net7.0\Names.runtimeconfig.json
+C:\Users\navem\source\repos\TodoList\BasicOOP\Names\bin\Debug\net7.0\Names.dll
+C:\Users\navem\source\repos\TodoList\BasicOOP\Names\bin\Debug\net7.0\Names.pdb
+C:\Users\navem\source\repos\TodoList\BasicOOP\Names\obj\Debug\net7.0\Names.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\navem\source\repos\TodoList\BasicOOP\Names\obj\Debug\net7.0\Names.AssemblyInfoInputs.cache
+C:\Users\navem\source\repos\TodoList\BasicOOP\Names\obj\Debug\net7.0\Names.AssemblyInfo.cs
+C:\Users\navem\source\repos\TodoList\BasicOOP\Names\obj\Debug\net7.0\Names.csproj.CoreCompileInputs.cache
+C:\Users\navem\source\repos\TodoList\BasicOOP\Names\obj\Debug\net7.0\Names.sourcelink.json
+C:\Users\navem\source\repos\TodoList\BasicOOP\Names\obj\Debug\net7.0\Names.dll
+C:\Users\navem\source\repos\TodoList\BasicOOP\Names\obj\Debug\net7.0\refint\Names.dll
+C:\Users\navem\source\repos\TodoList\BasicOOP\Names\obj\Debug\net7.0\Names.pdb
+C:\Users\navem\source\repos\TodoList\BasicOOP\Names\obj\Debug\net7.0\Names.genruntimeconfig.cache
+C:\Users\navem\source\repos\TodoList\BasicOOP\Names\obj\Debug\net7.0\ref\Names.dll

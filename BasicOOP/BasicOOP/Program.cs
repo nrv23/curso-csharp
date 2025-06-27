@@ -15,6 +15,8 @@ var internationPizzaDay23Plus1 = internationPizzaDay23.AddYears(1);
 Console.WriteLine($"International Pizza Day 2024: {internationPizzaDay23Plus1}");
 
 var rectangle = new Rectangle(6, 20);
+var rectangle2 = new Rectangle(6, 20);
+var rectangl23 = new Rectangle(6, 20);
 var calculator = new ShapesMeasurementsCalcultator();
 var person = new Person
 {
@@ -31,5 +33,6 @@ Console.WriteLine($"Rectangle created with width: {rectangle.Width} and height: 
 Console.WriteLine($"Area: {calculator.CalculateArea(rectangle)}");
 
 Console.WriteLine($"Circumference: {calculator.CalculateCircumference(rectangle)}");
+Console.WriteLine($" numero de instancias de rectangle class "+ Rectangle.CountofInstances);
 
 Console.ReadKey();

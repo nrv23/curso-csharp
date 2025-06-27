@@ -25,7 +25,7 @@ namespace BasicOOP.exercises
             }
         }
 
-        public Order(string item, DateTime date)
+        public Order(string item, DateTime date )
         {
             this.Item = item;
             this.Date = date;

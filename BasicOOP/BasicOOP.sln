@@ -10,6 +10,10 @@ Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Solution Items", "Solution 
 		notas.txt = notas.txt
 	EndProjectSection
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Calculator", "Calculator\Calculator.csproj", "{1F260E5B-B01F-4CC0-A0D0-1BEAC2B0F059}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Names", "Names\Names.csproj", "{144AB057-2968-42FE-B6AF-6087F89B0AEE}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -20,6 +24,14 @@ Global
 		{5C3B8241-0DC7-473C-99F6-FD79834EEB26}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{5C3B8241-0DC7-473C-99F6-FD79834EEB26}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{5C3B8241-0DC7-473C-99F6-FD79834EEB26}.Release|Any CPU.Build.0 = Release|Any CPU
+		{1F260E5B-B01F-4CC0-A0D0-1BEAC2B0F059}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{1F260E5B-B01F-4CC0-A0D0-1BEAC2B0F059}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{1F260E5B-B01F-4CC0-A0D0-1BEAC2B0F059}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{1F260E5B-B01F-4CC0-A0D0-1BEAC2B0F059}.Release|Any CPU.Build.0 = Release|Any CPU
+		{144AB057-2968-42FE-B6AF-6087F89B0AEE}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{144AB057-2968-42FE-B6AF-6087F89B0AEE}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{144AB057-2968-42FE-B6AF-6087F89B0AEE}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{144AB057-2968-42FE-B6AF-6087F89B0AEE}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

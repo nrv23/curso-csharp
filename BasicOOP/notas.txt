@@ -33,4 +33,27 @@ var person = new Person
 No es necesario setear todos, el compilador asignará los valores por defecto a las propiedades que no se hayan inicializado explícitamente.
 inicializar con objetos funciona si el set proterty es público.
 
-el property init permite establecer el valor de una propiedad solo durante la inicialización del objeto, una vez que el objeto ha sido creado, la propiedad no puede ser modificada.
+el property init permite establecer el valor de una propiedad solo durante la inicialización del objeto, una vez que el objeto ha sido creado, la propiedad no puede ser modificada.}
+
+cuando usar metodos o clases estaticos:
+// - Cuando no necesitas mantener un estado específico de una instancia.
+// - Cuando la funcionalidad es independiente de cualquier instancia específica.
+// - Cuando quieres agrupar funciones relacionadas que no dependen de los datos de instancia.
+// - Cuando quieres mejorar la legibilidad del código al indicar que una función es utilitaria o de ayuda.
+// - Cuando quieres evitar la creación de instancias innecesarias para funciones que no requieren estado.
+
+usar metodos estaticos cuando el metodo no necesita acceder a datos de instancia y su funcionalidad es independiente de cualquier objeto específico.
+
+las propiedades const son por default estáticas, lo que significa que pertenecen a la clase en lugar de a una instancia específica.
+
+Sumamente importante:
+
+Usa const solo con valores conocidos en compilación (ej: const int Max = 100;).
+
+Usa readonly para valores que:
+
+Necesitan inicialización en tiempo de ejecución.
+
+No cambiarán después de ser asignados.
+
+Incluyen propiedades estáticas como Environment.NewLine.

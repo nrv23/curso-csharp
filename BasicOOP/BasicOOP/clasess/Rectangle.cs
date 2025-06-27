@@ -8,7 +8,7 @@ namespace BasicOOP.clasess
 {
     public class Rectangle
     {
-
+        public static int CountofInstances { get; private set; }
         private int _width;
         private int _height;
 
@@ -31,7 +31,8 @@ namespace BasicOOP.clasess
 
         public Rectangle(int width, int height)
         {
-     
+            CountofInstances++;
+
             this._width = this.SetDefaultValueIfNotPositive(width, nameof(this._width));
             this._height = this.SetDefaultValueIfNotPositive(height,nameof(this._height));
     
