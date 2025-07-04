@@ -57,3 +57,7 @@ Necesitan inicialización en tiempo de ejecución.
 No cambiarán después de ser asignados.
 
 Incluyen propiedades estáticas como Environment.NewLine.
+
+Al importar directivas globales no es necesario importarla en cada archivo, se importan una sola vez al inicio del proyecto.
+
+global using System;
