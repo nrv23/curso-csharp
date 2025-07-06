@@ -1,0 +1,23 @@
+{
+  "runtimeTarget": {
+    "name": ".NETCoreApp,Version=v7.0",
+    "signature": ""
+  },
+  "compilationOptions": {},
+  "targets": {
+    ".NETCoreApp,Version=v7.0": {
+      "AdvancedOOP/1.0.0": {
+        "runtime": {
+          "AdvancedOOP.dll": {}
+        }
+      }
+    }
+  },
+  "libraries": {
+    "AdvancedOOP/1.0.0": {
+      "type": "project",
+      "serviceable": false,
+      "sha512": ""
+    }
+  }
+}
