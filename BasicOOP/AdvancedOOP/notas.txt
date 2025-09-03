@@ -4,4 +4,21 @@ Object class es la clase base de todas las clases en C#. Es la raíz de la jerarq
 la palabra reservada base puede usar como constrcutor de la clase base o instancia para llamar a propiedades de la 
 clase base
 
-is funciona como instanceof en Javascript, verificar de cual clase es una instancia
+la palabra reservada is funciona como instanceof en Javascript, verificar de cual clase es una instancia, con la palabra reservada is, puedo
+comparar si un valor es null, por ejemplo: variable is null
+la palabra reservada as funciona como un casting seguro, si no se puede castear devuelve null pero solo a tipos compatibles e tengan una relacion de herencia
+y puedan ser convertidos, por ejemplo: variable as Tipo y que pueda contener valores null
+
+EN las clases abstractas los metodos abstratctos de la clase base deben ser implementados en las clases derivadas, son metodos sin cuerpo y de tipo virtual
+
+diferencia entre metodos virtuales y abstractos:
+los metodos virtuales pueden tener una implementacion en la clase base y pueden ser sobreescritos en las clases derivadas
+los metodos abstractos no tienen implementacion en la clase base y deben ser implementados en las clases derivadas
+una clase abstracta no puede ser instanciada directamente, solo puede ser heredada por otras clases
+clases de tipo sealed no pueden ser heredadas por otras clases, pero si pueden ser instanciadas
+losetodos sealed no pueden ser sobreescritos en las clases derivadas y solo pueden ser metodos virtuales
+
+las extensiones solo puede definirse en clases estaticas y los metodos de extension deben ser estaticos
+el parametro this en el metodo de extension indica el tipo que se va a extender
+
+las extensiones deben separarse en archivos diferentes a las clases que se van a extender

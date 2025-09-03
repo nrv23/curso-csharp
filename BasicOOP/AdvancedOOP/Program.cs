@@ -2,11 +2,15 @@
 
 
 
-//var pizza = new Pizza();    
-//pizza.addIngredient(new Cheddar ());
-//pizza.addIngredient(new TomatoSauce());
-//pizza.addIngredient(new Mozzarella());
+using AdvancedOOP.Extensions;
+//var pizza = new Pizza();
+//pizza.addIngredient(new Cheddar(1,1));
+//pizza.addIngredient(new TomatoSauce(1));
+//pizza.addIngredient(new Mozzarella(1));
 
+//Console.WriteLine(pizza.number);
+//Console.WriteLine(pizza.date); 
+//Console.WriteLine(pizza.ingredients is null );
 
 //Console.WriteLine(pizza.Describe());
 
@@ -53,41 +57,76 @@
 //Console.WriteLine(d);
 //Console.WriteLine(e);
 
-var cheddar = new Cheddar(1, 13);
-Console.WriteLine($"is Object {cheddar is Object}");
-Console.WriteLine($"is Ingredient {cheddar is Ingredients}");
-Console.WriteLine($"is Cheddar {cheddar is Cheddar}");
-Console.WriteLine($"is Mozzarella {cheddar is Mozzarella}");
-Console.WriteLine($"is Pizza {cheddar is Pizza}");
-Console.WriteLine($"is TomatoSauce {cheddar is TomatoSauce}");
+//var cheddar = new Cheddar(1, 13);
+//Console.WriteLine($"is Object {cheddar is Object}");
+//Console.WriteLine($"is Ingredient {cheddar is Ingredients}");
+//Console.WriteLine($"is Cheddar {cheddar is Cheddar}");
+//Console.WriteLine($"is Mozzarella {cheddar is Mozzarella}");
+//Console.WriteLine($"is Pizza {cheddar is Pizza}");
+//Console.WriteLine($"is TomatoSauce {cheddar is TomatoSauce}");
 
-Ingredients randomIngredient = GenerateRandomIngredient();
-Console.WriteLine($"random ingredient {randomIngredient.Name}");
+//Ingredients randomIngredient = GenerateRandomIngredient();
+//Cheddar cheddar = randomIngredient as Cheddar; // el as intenta convertir el objeto a la clase especificada, sino puede devuelve null
+//Console.WriteLine($"random ingredient {randomIngredient.Name}");
+//Console.WriteLine($"cheddar ingredient {cheddar?.Name}");
 
-if(randomIngredient is Cheddar)
-{   
-    cheddar = (Cheddar) randomIngredient;
-    Console.WriteLine("Ingrendient is Cheddar");
-    Console.WriteLine($"cheddar ingredient {cheddar}");
-}
+//if(cheddar is null) {
+//    Console.WriteLine("The ingredient is not a cheddar");
+//}
+//else
+//{
+//    Console.WriteLine("The ingredient is a cheddar");
+//}
+
+//if (randomIngredient is Cheddar c)
+//{
+//    c = (Cheddar)randomIngredient;
+//    Console.WriteLine("Ingrendient is Cheddar");
+//    Console.WriteLine($"cheddar ingredient {c}");
+//}
+
+
+//Ingredients GenerateRandomIngredient()
+//{
+//    var rnd = new Random();
+//    int num = rnd.Next(1, 4);
+
+//    switch (num)
+//    {
+//        case 1:
+//            return new Ingredients(1);
+//        case 2:
+//            return new Mozzarella(1);
+//        default:
+//            return new Cheddar(1, 2);
+//    }
+//}
+
+
+
+//var ingredientsArray = new List<Ingredients> {  new Cheddar(1, 12),
+//new TomatoSauce(1),
+//new Mozzarella(1) };
+
+
+//foreach (var ingredient in ingredientsArray)
+//{
+//    ingredient.Prepare();
+//}
+
+var multlineString = @"aaaa
+bbbb
+cccc
+dddd
+eeee
+";
+
+Console.WriteLine($"The string has {multlineString.CountLines()} lines.");
 
 Console.ReadKey();
 
-Ingredients GenerateRandomIngredient()
-{
-    var rnd = new Random();
-    int num = rnd.Next(1, 4);
 
-    switch(num)
-    {
-        case 1:
-            return new Ingredients(1);
-        case 2:
-            return new Mozzarella(1);
-        default:
-            return new Cheddar(1,2);
-    }
-}
+
 
 public enum Season // se obtiene por indices empezando desde el 0
 {
@@ -100,7 +139,9 @@ public enum Season // se obtiene por indices empezando desde el 0
 public class Pizza
 {
     private List<Ingredients> _ingredients = new List<Ingredients>();
-
+    public int number;
+    public DateTime date;
+    public Ingredients ingredients;  
 
     public void addIngredient(Ingredients ingredient)
     {
@@ -111,7 +152,7 @@ public class Pizza
 }
  
 
-public class Ingredients
+public abstract class Ingredients
 
 
 {
@@ -130,6 +171,8 @@ public class Ingredients
     public string PublicMethod() => "This is a public method in Ingredients class.";
    private string PrivateMethod() => "This is a Private method in Ingredients class.";
    protected string ProtectedMethod() => "This is a Protected method in Ingredients class.";
+
+    public abstract void Prepare();
 }
 
 
@@ -150,6 +193,11 @@ public class Cheddar : Ingredients
           Console.WriteLine(PublicMethod());
           Console.WriteLine(ProtectedMethod());
     }
+
+    public override void Prepare()
+    {
+        Console.WriteLine("Grate the cheddar cheese and sprinkle it over the pizza.");
+    }
 }
 
 public class TomatoSauce: Ingredients
@@ -160,9 +208,12 @@ public class TomatoSauce: Ingredients
     }
     public override string Name { get;} = "Tomato Sauce";
     public int TomatosIn100Grams { get;  }
+
+    public sealed override void Prepare() => Console.WriteLine("Spread a generous layer of tomato sauce over the pizza dough.");
+    
 }
 
-public  class Mozzarella: Ingredients
+public sealed  class Mozzarella: Ingredients
 {
     public Mozzarella(int priceIfExtraTopping) : base(priceIfExtraTopping)
     {
@@ -172,6 +223,21 @@ public  class Mozzarella: Ingredients
     public override string Name => "Mozzarella";
     public bool IsLight { get; }
 
-    public  void Prepare() =>
+    public override void Prepare() =>
         Console.WriteLine("Slice thinly and place on top of the pizza.");
 }
+
+public class SpecialTomatoSauce: TomatoSauce {
+
+    public SpecialTomatoSauce(int number): base(number)
+    {
+        
+    }
+    // los metodos sealed de clases base no pueden ser sobreescritos en clases derivadas
+    //public override Prepare() => Console.WriteLine("Spread a special layer of tomato sauce over the pizza dough.");
+}
+
+//public class Parmesan: Mozzarella
+//{
+   
+//}
