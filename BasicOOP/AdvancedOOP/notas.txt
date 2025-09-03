@@ -1,0 +1,7 @@
+Todas las clases en C# derivan de System.Object
+
+Object class es la clase base de todas las clases en C#. Es la raíz de la jerarquia de tipos.
+la palabra reservada base puede usar como constrcutor de la clase base o instancia para llamar a propiedades de la 
+clase base
+
+is funciona como instanceof en Javascript, verificar de cual clase es una instancia

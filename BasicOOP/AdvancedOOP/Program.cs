@@ -2,36 +2,101 @@
 
 
 
-var pizza = new Pizza();    
-pizza.addIngredient(new Cheddar ());
-pizza.addIngredient(new TomatoSauce());
-pizza.addIngredient(new Mozzarella());
+//var pizza = new Pizza();    
+//pizza.addIngredient(new Cheddar ());
+//pizza.addIngredient(new TomatoSauce());
+//pizza.addIngredient(new Mozzarella());
 
-// aplicando herencia  
 
-var cheddar = new Cheddar();
+//Console.WriteLine(pizza.Describe());
 
-var igredients = new  Cheddar();
+//// aplicando herencia  
 
-cheddar.Methods();
-cheddar.PublicField = 1;
+//var cheddar = new Cheddar();
 
-Console.WriteLine($"Cheddar public field: {cheddar.PublicField}");
-Console.WriteLine($"Cheddar name: {cheddar.Name}");
-Console.WriteLine("Ingredient Name: " + igredients.Name);
+//var igredients = new  Cheddar();
 
-var ingredientsList = new List<Ingredients>
-{
-    new Cheddar(),
-    new TomatoSauce(),
-    new Mozzarella()
-};
+//cheddar.Methods();
+//cheddar.PublicField = 1;
 
-foreach (var ingredient in ingredientsList)
-{
-    Console.WriteLine($"Ingredient: {ingredient.Name}");
+//Console.WriteLine($"Cheddar public field: {cheddar.PublicField}");
+//Console.WriteLine($"Cheddar name: {cheddar.Name}");
+//Console.WriteLine("Ingredient Name: " + igredients.Name);
+
+//var ingredientsList = new List<Ingredients>
+//{
+//    new Cheddar(),
+//    new TomatoSauce(),
+//    new Mozzarella()
+//};
+
+//foreach (var ingredient in ingredientsList)
+//{
+//    Console.WriteLine($"Ingredient: {ingredient.Name}");
+//}
+
+// var ingredient = new Ingredients(1);
+// var cheddar = new Cheddar(2,12);
+
+// Console.WriteLine(cheddar);
+
+//decimal a = 10.99m; 
+//int b = 1;
+//decimal c = b;
+//int d = (int) a; // esta conversion solo quita la parte despues del punto,
+//int e = Convert.ToInt32(a); // esta conversion redondea el numero al convertirlo a int
+//int seasonNumber = 0;
+//Season season = (Season) seasonNumber; // conversion explicita
+//Console.WriteLine(season);
+//Console.WriteLine(a);
+//Console.WriteLine(c);
+//Console.WriteLine(d);
+//Console.WriteLine(e);
+
+var cheddar = new Cheddar(1, 13);
+Console.WriteLine($"is Object {cheddar is Object}");
+Console.WriteLine($"is Ingredient {cheddar is Ingredients}");
+Console.WriteLine($"is Cheddar {cheddar is Cheddar}");
+Console.WriteLine($"is Mozzarella {cheddar is Mozzarella}");
+Console.WriteLine($"is Pizza {cheddar is Pizza}");
+Console.WriteLine($"is TomatoSauce {cheddar is TomatoSauce}");
+
+Ingredients randomIngredient = GenerateRandomIngredient();
+Console.WriteLine($"random ingredient {randomIngredient.Name}");
+
+if(randomIngredient is Cheddar)
+{   
+    cheddar = (Cheddar) randomIngredient;
+    Console.WriteLine("Ingrendient is Cheddar");
+    Console.WriteLine($"cheddar ingredient {cheddar}");
 }
+
 Console.ReadKey();
+
+Ingredients GenerateRandomIngredient()
+{
+    var rnd = new Random();
+    int num = rnd.Next(1, 4);
+
+    switch(num)
+    {
+        case 1:
+            return new Ingredients(1);
+        case 2:
+            return new Mozzarella(1);
+        default:
+            return new Cheddar(1,2);
+    }
+}
+
+public enum Season // se obtiene por indices empezando desde el 0
+{
+    Spring, // como el seasonNumber es 0 toma la primer opcion o sea Spring
+    Summer,
+    Autum,
+    Winter
+}
+
 public class Pizza
 {
     private List<Ingredients> _ingredients = new List<Ingredients>();
@@ -48,7 +113,16 @@ public class Pizza
 
 public class Ingredients
 
+
 {
+
+    public Ingredients(int _PrinceIfExtraTopping)
+    {
+        PrinceIfExtraTopping = _PrinceIfExtraTopping;
+        Console.WriteLine("Constructor Ingredients");
+    }
+    public int PrinceIfExtraTopping {  get; }
+    public override string ToString() => Name;
 
     public int PublicField;
 
@@ -62,7 +136,14 @@ public class Ingredients
 
 public class Cheddar : Ingredients
 {
-    public override string Name { get; } = "Cheddar Cheese";
+    public Cheddar(int priceIfExtraTopping, int ageForMonths): base(priceIfExtraTopping) // cuando se hereda de una clase y el constructor de la
+        // clase base ocupa que se le envie parametros requeridos, base representa el constructor de la clase padre
+    {
+        Console.WriteLine("Constructor Cheddar");
+        AgedForMonths = ageForMonths;
+        
+    }
+    public override string Name => $"{base.Name} more specifilly a cheddar chesse aged for {AgedForMonths} months";
     public int AgedForMonths { get; }
 
     public void Methods() {
@@ -73,15 +154,22 @@ public class Cheddar : Ingredients
 
 public class TomatoSauce: Ingredients
 {
-       public override string Name { get;} = "Tomato Sauce";
+    public TomatoSauce(int priceIfExtraTopping) : base(priceIfExtraTopping)
+    {
+        
+    }
+    public override string Name { get;} = "Tomato Sauce";
     public int TomatosIn100Grams { get;  }
 }
 
 public  class Mozzarella: Ingredients
 {
-   
+    public Mozzarella(int priceIfExtraTopping) : base(priceIfExtraTopping)
+    {
+        
+    }
 
-    public  string Name => "Mozzarella";
+    public override string Name => "Mozzarella";
     public bool IsLight { get; }
 
     public  void Prepare() =>
