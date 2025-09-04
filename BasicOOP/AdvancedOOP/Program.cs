@@ -114,6 +114,10 @@ using AdvancedOOP.Extensions;
 //    ingredient.Prepare();
 //}
 
+var list = new List<int> { 1, 5, 10, 8, 12, 4, 5 };
+var newList = list.TakeEverySecond();
+Console.WriteLine($"new  list: {string.Join(", ",newList)}");
+
 var multlineString = @"aaaa
 bbbb
 cccc
@@ -122,6 +126,10 @@ eeee
 ";
 
 Console.WriteLine($"The string has {multlineString.CountLines()} lines.");
+
+Season season = (Season) 0;
+
+Console.WriteLine($"Next season {season.Next()}");
 
 Console.ReadKey();
 
