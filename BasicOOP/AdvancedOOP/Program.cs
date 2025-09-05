@@ -1,8 +1,29 @@
 ﻿
 
 
-
+using System.Text.Json;
 using AdvancedOOP.Extensions;
+using AdvancedOOP.Exercises;
+using AdvancedOOP.Examples;
+
+var numberTransform = NumberTransformation.Transform(4);
+
+
+var person = new Person
+{
+    FirstName = "Jose",
+    LastName = "Perez",
+    YearOfBirth = 1990
+};
+
+var asJson = JsonSerializer.Serialize(person);
+
+var personaJson = "{\"FirstName\":\"Jose\",\"LastName\":\"Perez\",\"YearOfBirth\":1990}";
+var personFromJson = JsonSerializer.Deserialize<Person>(personaJson);
+Console.WriteLine($"As JSOn {asJson}");
+Console.WriteLine($"is instance of person {personFromJson is Person}");
+Console.WriteLine($"First Name {personFromJson?.FirstName}");
+
 //var pizza = new Pizza();
 //pizza.addIngredient(new Cheddar(1,1));
 //pizza.addIngredient(new TomatoSauce(1));
@@ -114,22 +135,22 @@ using AdvancedOOP.Extensions;
 //    ingredient.Prepare();
 //}
 
-var list = new List<int> { 1, 5, 10, 8, 12, 4, 5 };
-var newList = list.TakeEverySecond();
-Console.WriteLine($"new  list: {string.Join(", ",newList)}");
+//var list = new List<int> { 1, 5, 10, 8, 12, 4, 5 };
+//var newList = list.TakeEverySecond();
+//Console.WriteLine($"new  list: {string.Join(", ",newList)}");
 
-var multlineString = @"aaaa
-bbbb
-cccc
-dddd
-eeee
-";
+//var multlineString = @"aaaa
+//bbbb
+//cccc
+//dddd
+//eeee
+//";
 
-Console.WriteLine($"The string has {multlineString.CountLines()} lines.");
+//Console.WriteLine($"The string has {multlineString.CountLines()} lines.");
 
-Season season = (Season) 0;
+//Season season = (Season) 0;
 
-Console.WriteLine($"Next season {season.Next()}");
+//Console.WriteLine($"Next season {season.Next()}");
 
 Console.ReadKey();
 

@@ -22,3 +22,8 @@ las extensiones solo puede definirse en clases estaticas y los metodos de extens
 el parametro this en el metodo de extension indica el tipo que se va a extender
 
 las extensiones deben separarse en archivos diferentes a las clases que se van a extender
+
+las clases abstractas se usan cuando las clases derivadas comparten propiedades y comportamientos comunes y tienen relacion entre si
+las interfaces se usan cuando las clases no tienen relacion entre si pero comparten comportamientos comunes
+Los nombre de las interfaces deben comenzar con I
+las interfaces puden heredar de otras interfaces
