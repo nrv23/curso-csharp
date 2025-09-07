@@ -1,0 +1,11 @@
+Diferencia entre inyecion de dependencias e inversion de dependencias
+Inyección de dependencias es un patrón de diseño que permite a un objeto recibir sus dependencias desde el exterior, en lugar de crearlas internamente. Esto facilita la gestión y el cambio de dependencias, promoviendo un código más modular y fácil de probar.
+Inversión de dependencias es un principio de diseño que sugiere que los módulos de alto nivel no deben depender de módulos de bajo nivel, sino que ambos deben depender de abstracciones. Esto ayuda a reducir el acoplamiento entre componentes y mejora la flexibilidad del sistema.
+Ambos conceptos están relacionados, ya que la inyección de dependencias es una forma común de implementar la inversión de dependencias.
+En resumen, la inyección de dependencias es una técnica para suministrar dependencias, mientras que la inversión de dependencias es un principio que guía cómo estructurar las dependencias en un sistema.
+La inversion de dependencias se aplica usando interfaces o clases abstractas para definir las dependencias, mientras que la inyección de dependencias se refiere al proceso de proporcionar esas dependencias a través de constructores, métodos o propiedades.
+Ejemplo de Inversion de dependencias
+La inyección se aplica pasando como parámetro una interfaz o clase abstracta en el constructor de una clase.
+IEnumerable es una interfaz generica de datos de solo lectura.Y se puede recorrer con foreach.
+
+La didferencia entre metodos abtract y virtual es que los metodos abstractos no tienen implementacion y deben ser implementados en las clases derivadas, mientras que los metodos virtuales tienen una implementacion por defecto que puede ser sobrescrita en las clases derivadas si es necesario.
