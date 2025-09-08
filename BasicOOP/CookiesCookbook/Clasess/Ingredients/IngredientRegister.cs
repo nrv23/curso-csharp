@@ -6,10 +6,11 @@ using System.Threading.Tasks;
 
 namespace CookiesCookbook.Clasess.Ingredients
 {
-    public class IngredientRegister
+
+    public class IngredientRegister : IIngredientRegister
     {
-        public IEnumerable<Ingredient> All { get; } = new List<Ingredient> { 
-        
+        public IEnumerable<Ingredient> All { get; } = new List<Ingredient> {
+
             new WheatFlour(),
             new SpealtFlour(),
             new Butter(),
@@ -25,7 +26,7 @@ namespace CookiesCookbook.Clasess.Ingredients
             Ingredient? result = null;
             foreach (var ingredient in All)
             {
-                if (ingredient.ID != id) continue ;
+                if (ingredient.ID != id) continue;
                 result = ingredient;
             }
 

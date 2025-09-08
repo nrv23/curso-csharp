@@ -2,11 +2,17 @@
 using CookiesCookbook.Clasess;
 using CookiesCookbook.Clasess.Ingredients;
 using CookiesCookbook.Clasess.Ingredients.Ingredients;
+using CookiesCookbook.Enums;
 
+const FileFormat Format = FileFormat.json;
+const string filePath = "recipes";
+IStringsRepository jsonStringRepository = Format == FileFormat.json 
+    ? new JSONStringsRepository() 
+    : new StringTextualRepository();
 
-var repository = new RecipesRepository(new StringTextualRepository());
-var userInteraction = new RecipesConsoleUserInteraction(new IngredientRegister());
-
+var ingredientRegister = new IngredientRegister();
+var repository = new RecipesRepository(jsonStringRepository, ingredientRegister);
+var userInteraction = new RecipesConsoleUserInteraction(ingredientRegister);
 var cookiesRecipesApp = new CookiesRecipesApp(repository, userInteraction);
 
-cookiesRecipesApp.Run("recipes.txt");
+cookiesRecipesApp.Run(new FileMetaData(filePath, Format).GetPath());
