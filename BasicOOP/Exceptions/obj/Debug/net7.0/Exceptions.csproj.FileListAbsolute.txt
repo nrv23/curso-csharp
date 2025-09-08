@@ -1,0 +1,15 @@
+C:\Users\navem\source\repos\TodoList\BasicOOP\Exceptions\bin\Debug\net7.0\Exceptions.exe
+C:\Users\navem\source\repos\TodoList\BasicOOP\Exceptions\bin\Debug\net7.0\Exceptions.deps.json
+C:\Users\navem\source\repos\TodoList\BasicOOP\Exceptions\bin\Debug\net7.0\Exceptions.runtimeconfig.json
+C:\Users\navem\source\repos\TodoList\BasicOOP\Exceptions\bin\Debug\net7.0\Exceptions.dll
+C:\Users\navem\source\repos\TodoList\BasicOOP\Exceptions\bin\Debug\net7.0\Exceptions.pdb
+C:\Users\navem\source\repos\TodoList\BasicOOP\Exceptions\obj\Debug\net7.0\Exceptions.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\navem\source\repos\TodoList\BasicOOP\Exceptions\obj\Debug\net7.0\Exceptions.AssemblyInfoInputs.cache
+C:\Users\navem\source\repos\TodoList\BasicOOP\Exceptions\obj\Debug\net7.0\Exceptions.AssemblyInfo.cs
+C:\Users\navem\source\repos\TodoList\BasicOOP\Exceptions\obj\Debug\net7.0\Exceptions.csproj.CoreCompileInputs.cache
+C:\Users\navem\source\repos\TodoList\BasicOOP\Exceptions\obj\Debug\net7.0\Exceptions.sourcelink.json
+C:\Users\navem\source\repos\TodoList\BasicOOP\Exceptions\obj\Debug\net7.0\Exceptions.dll
+C:\Users\navem\source\repos\TodoList\BasicOOP\Exceptions\obj\Debug\net7.0\refint\Exceptions.dll
+C:\Users\navem\source\repos\TodoList\BasicOOP\Exceptions\obj\Debug\net7.0\Exceptions.pdb
+C:\Users\navem\source\repos\TodoList\BasicOOP\Exceptions\obj\Debug\net7.0\Exceptions.genruntimeconfig.cache
+C:\Users\navem\source\repos\TodoList\BasicOOP\Exceptions\obj\Debug\net7.0\ref\Exceptions.dll
