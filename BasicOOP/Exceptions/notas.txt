@@ -1,0 +1,3 @@
+Si una funcion lanza una excepcion, la funcion que la llama debe manejarla pero con el mismo tipo de excepcion o una superclase de la misma.
+
+Siempre se debe manejar la excepcion mas especifica primero y luego la mas generica.
