@@ -2,13 +2,21 @@
 
 
 var logger = new Logger("log.txt");
-
+;
 try
 {
-     GameDataParserApp App = new GameDataParserApp(logger);
+    GameDataParserApp App = new GameDataParserApp(
+        new ConsoleUserInteractor(),
+        new VideoGamesRepository(
+            new ConsoleUserInteractor()),
+        new GamesPrinter(
+             new ConsoleUserInteractor()
+            ),
+        new FileReader()
+     );
     App.Run();
 }
-catch(Exception ex)
+catch (Exception ex)
 {
     logger.Log(ex);
     Console.WriteLine("An error occurred. Please check the log file for details.");
