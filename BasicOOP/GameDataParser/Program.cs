@@ -1,25 +1,21 @@
-﻿using System.Text.Json;
-using GameDataParser.clasess;
+﻿using GameDataParser.clasess;
 
-Console.WriteLine("Enter the file name you want to read");
 
-var fileName = Console.ReadLine();
-//var filePath = Path.Combine(Directory.GetCurrentDirectory(), "GameData", fileName); esta linea es como un path.join y __dirname en node
-//var filePath = Path.Combine(AppDomain.CurrentDomain.BaseDirectory, "GameData", fileName); // esta linea es como un path.join y __dirname en node
+var logger = new Logger("log.txt");
 
-var fileCotent = File.ReadAllText(fileName);
-var videoGames = JsonSerializer.Deserialize<List<VideoGame>>(fileCotent);
-
-if( videoGames.Count() > 0)
+try
 {
-    Console.WriteLine($"Loaded games");
-    foreach (var game in videoGames)
-    {
-        Console.WriteLine( game.ToString());
-    }
+     GameDataParserApp App = new GameDataParserApp(logger);
+    App.Run();
 }
-else
+catch(Exception ex)
 {
-    Console.WriteLine("There is not results");
+    logger.Log(ex);
+    Console.WriteLine("An error occurred. Please check the log file for details.");
 }
+finally
+{
+    Console.WriteLine("App will have to be closed...");
+}
+
 Console.ReadKey();

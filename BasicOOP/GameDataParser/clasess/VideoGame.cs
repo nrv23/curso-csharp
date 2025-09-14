@@ -10,7 +10,7 @@ namespace GameDataParser.clasess
     {
         // Propiedades
         public string Title { get; init; }
-        public  int ReleaseYear { get; init; }
+        public int ReleaseYear { get; init; }
         public decimal Rating { get; init; }
 
         // Constructor

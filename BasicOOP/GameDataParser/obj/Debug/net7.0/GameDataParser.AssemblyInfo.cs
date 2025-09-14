@@ -14,7 +14,7 @@ using System.Reflection;
 [assembly: System.Reflection.AssemblyCompanyAttribute("GameDataParser")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Debug")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+20ebe5f5727e6ca02751469db2ea4db55f0d42cd")]
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+dbbfabe0980ed19d1a4de146e1ed0371bedaa6af")]
 [assembly: System.Reflection.AssemblyProductAttribute("GameDataParser")]
 [assembly: System.Reflection.AssemblyTitleAttribute("GameDataParser")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]
