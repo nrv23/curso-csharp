@@ -1,0 +1,5 @@
+Las clases genericas pueden tener tantos tipos genericos como se desee.
+Las tuplas en C# son clases genericas que pueden tener entre 1 y 8 tipos genericos. Para poder devolver difernetes tipos genericos
+en una sola respuesta, se puede usar una tupla con varios tipos genericos.
+
+En c# se puede generar tuplas usando la misma clase generica pero con diferente numero de parametros genericos
