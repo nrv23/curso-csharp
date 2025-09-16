@@ -12,3 +12,6 @@ var collection = new List<int>(length);
 
 IComparer<T> es una interfaz que permite definir un criterio de comparación personalizado para ordenar o comparar objetos de un tipo específico T.
 Pero solo compara dos objetos a la vez y por tipos especificos, no sirve para comparar listas completas o colecciones
+
+ where T:INumber<T>  sirve para restringir el tipo generico T a tipos numericos, como int, float, double, etc.
+ INumber<T> es una interfaz que define operaciones aritméticas y de comparación para tipos numéricos en C#.

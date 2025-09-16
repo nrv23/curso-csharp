@@ -61,6 +61,22 @@ using System.Diagnostics;
 //Console.WriteLine();
 //Console.WriteLine(string.Join(" ", randomInts));
 
+// metodos que tienen mas de una reestricion 
+
+void SomeMethod<TPet,TPetOwner>(TPet pet, TPetOwner petOwner)
+    where TPet: Pet, IComparable<TPet>
+    where TPetOwner: new ()
+    // cada tipo generico tiene sus propias restricciones
+{
+
+}
+
+Console.WriteLine(Calculator.Square<int>(5));
+Console.WriteLine(Calculator.Square<decimal>(5.1m));
+Console.WriteLine(Calculator.Square<double>(5.3333));
+Console.WriteLine(Calculator.Square<long>(1364863473264326432));
+
+
 var people = new List<Person>
 {
     new Person {Name = "John", YearOfBirth = 1980},
@@ -176,3 +192,5 @@ GenericTuple<int, int, string> GetMaxAndMinNumber(IEnumerable<int> numbers // IE
 }
 
 
+public class Pet { }
+public class PetOwner { }
