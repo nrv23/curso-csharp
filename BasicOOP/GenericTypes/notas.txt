@@ -3,3 +3,12 @@ Las tuplas en C# son clases genericas que pueden tener entre 1 y 8 tipos generic
 en una sola respuesta, se puede usar una tupla con varios tipos genericos.
 
 En c# se puede generar tuplas usando la misma clase generica pero con diferente numero de parametros genericos
+
+para mejorar el rendimiento de las listas, setear el tamaño de la lista siempre que sea posible al declararla
+en su constructor vaciío, ejemplo
+
+int length = 100000000;
+var collection = new List<int>(length);
+
+IComparer<T> es una interfaz que permite definir un criterio de comparación personalizado para ordenar o comparar objetos de un tipo específico T.
+Pero solo compara dos objetos a la vez y por tipos especificos, no sirve para comparar listas completas o colecciones
