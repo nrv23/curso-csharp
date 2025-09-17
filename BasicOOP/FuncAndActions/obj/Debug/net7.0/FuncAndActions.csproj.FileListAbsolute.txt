@@ -1,0 +1,15 @@
+C:\Users\navem\source\repos\TodoList\BasicOOP\FuncAndActions\bin\Debug\net7.0\FuncAndActions.exe
+C:\Users\navem\source\repos\TodoList\BasicOOP\FuncAndActions\bin\Debug\net7.0\FuncAndActions.deps.json
+C:\Users\navem\source\repos\TodoList\BasicOOP\FuncAndActions\bin\Debug\net7.0\FuncAndActions.runtimeconfig.json
+C:\Users\navem\source\repos\TodoList\BasicOOP\FuncAndActions\bin\Debug\net7.0\FuncAndActions.dll
+C:\Users\navem\source\repos\TodoList\BasicOOP\FuncAndActions\bin\Debug\net7.0\FuncAndActions.pdb
+C:\Users\navem\source\repos\TodoList\BasicOOP\FuncAndActions\obj\Debug\net7.0\FuncAndActions.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\navem\source\repos\TodoList\BasicOOP\FuncAndActions\obj\Debug\net7.0\FuncAndActions.AssemblyInfoInputs.cache
+C:\Users\navem\source\repos\TodoList\BasicOOP\FuncAndActions\obj\Debug\net7.0\FuncAndActions.AssemblyInfo.cs
+C:\Users\navem\source\repos\TodoList\BasicOOP\FuncAndActions\obj\Debug\net7.0\FuncAndActions.csproj.CoreCompileInputs.cache
+C:\Users\navem\source\repos\TodoList\BasicOOP\FuncAndActions\obj\Debug\net7.0\FuncAndActions.sourcelink.json
+C:\Users\navem\source\repos\TodoList\BasicOOP\FuncAndActions\obj\Debug\net7.0\FuncAndActions.dll
+C:\Users\navem\source\repos\TodoList\BasicOOP\FuncAndActions\obj\Debug\net7.0\refint\FuncAndActions.dll
+C:\Users\navem\source\repos\TodoList\BasicOOP\FuncAndActions\obj\Debug\net7.0\FuncAndActions.pdb
+C:\Users\navem\source\repos\TodoList\BasicOOP\FuncAndActions\obj\Debug\net7.0\FuncAndActions.genruntimeconfig.cache
+C:\Users\navem\source\repos\TodoList\BasicOOP\FuncAndActions\obj\Debug\net7.0\ref\FuncAndActions.dll

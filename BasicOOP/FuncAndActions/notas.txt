@@ -1,0 +1,11 @@
+Func se usa para definir un delegado que representa un método que toma uno o más parámetros de entrada y devuelve un valor.
+// Action se usa para definir un delegado que representa un método que toma uno o más parámetros de entrada y no devuelve ningún valor (void).
+El func se puede enviar como parámetro a un método, y ese método puede invocar el func para obtener un resultado basado en la lógica definida en el func.
+El ultimo parámetro del func es siempre el tipo de retorno.
+
+las funciones lambda son una forma concisa de definir métodos anónimos que pueden ser utilizados para crear instancias de delegados o expresiones de árbol.
+No se pueden usar funciones lambda asignandolas a una variable porque el compilador no puede inferir el tipo de dato.
+
+Las funciones lambda se puede usar solo en func y action. porque ya el compilador sabe que es un delegado. e infiere el tipo de dato.
+En los diccionarios, las llaves deben ser únicas. Si intentas agregar una llave que ya existe, se lanzará una excepción.
+El metodo ContainsKey devuelve un booleno indicando si la llave existe o no en el diccionario.
