@@ -9,3 +9,9 @@ No se pueden usar funciones lambda asignandolas a una variable porque el compila
 Las funciones lambda se puede usar solo en func y action. porque ya el compilador sabe que es un delegado. e infiere el tipo de dato.
 En los diccionarios, las llaves deben ser únicas. Si intentas agregar una llave que ya existe, se lanzará una excepción.
 El metodo ContainsKey devuelve un booleno indicando si la llave existe o no en el diccionario.
+
+las funciones lambda siempre van en delegados func y action.
+
+Strategy Pattern es un patrón de diseño que permite definir una familia de algoritmos, encapsular cada uno de ellos y hacerlos intercambiables.
+Permite extender el comportamiento de una clase sin modificar su código, promoviendo la adherencia al principio de abierto/cerrado.
+respetando el principio de responsabilidad única, ya que cada estrategia tiene una única responsabilidad.

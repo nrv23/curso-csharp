@@ -75,6 +75,50 @@ using FuncAndActions.clasess;
 //    return false;
 //}
 
+var numbers = new List<int> { 1, 2, 3, 11, 12, 13, 9,75,99, -9,-4,-5 };
+var filter = new Filter();
+var filteringType = ReadUserInput();
+var predicate = FilteringStratgeySelector.GetFilteringStrategy(filteringType);
+var filteredNumbers = filter.FilterElements<int>(numbers, predicate);
+PrintNumbers(filteredNumbers);
+
+string ReadUserInput()
+{
+       Console.WriteLine($"Enter a filtering type ({string.Join(Environment.NewLine,new FilteringStratgeySelector().FilteringStrategiesNames)}):");
+       return Console.ReadLine() ?? string.Empty;
+}
+
+
+void PrintNumbers(IEnumerable<int> numbers)
+{
+    Console.WriteLine($"Numbers: {string.Join(",", numbers)}");
+}
+
+
+
+
+var pets = new List<Pet>
+{
+    // Dogs
+    new Pet(PetType.Dog, 12),
+    new Pet(PetType.Dog, 22),
+    new Pet(PetType.Dog, 45),
+    new Pet(PetType.Dog, 33),
+
+    // Cats
+    new Pet(PetType.Cat, 5),
+    new Pet(PetType.Cat, 2),
+    new Pet(PetType.Cat, 7),
+    new Pet(PetType.Cat, 3.5),
+
+    // Fish
+    new Pet(PetType.Fish, 0.02),
+    new Pet(PetType.Fish, 0.5),
+    new Pet(PetType.Fish, 0.9),
+    new Pet(PetType.Fish, 0.3)
+};
+
+
 var employees = new List<Employee>
 {
     new Employee("Jake Smith", "Space Navigation", 25000),
@@ -85,7 +129,12 @@ var employees = new List<Employee>
     new Employee("Gustavo Sanchez", "Machanics", 20000),
 };
 Console.WriteLine($"Average salary per department:{System.Text.Json.JsonSerializer.Serialize(CalculateAverageSalaryPerDeparment(employees))}");
+
+
+//System.Text.Json.JsonSerializer.Serialize(
+Console.WriteLine($"Max weight per pet type: {System.Text.Json.JsonSerializer.Serialize(Pet.FindMaxWeights(pets))}");
 Console.ReadKey();
+
 Dictionary<string, decimal>? CalculateAverageSalaryPerDeparment(IEnumerable<Employee> employes)
 {
     var employeesPerDepartment = new Dictionary<string, List<Employee>>();
