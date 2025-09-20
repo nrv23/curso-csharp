@@ -28,6 +28,8 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "FuncAndActions", "FuncAndAc
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "CustomCache", "CustomCache\CustomCache.csproj", "{20B6A8CC-43D7-4B72-82A1-310C2EB1FE4A}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "LINQ", "LINQ\LINQ.csproj", "{DA13612E-24FC-4FC4-B895-DE9722B57DBC}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -74,6 +76,10 @@ Global
 		{20B6A8CC-43D7-4B72-82A1-310C2EB1FE4A}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{20B6A8CC-43D7-4B72-82A1-310C2EB1FE4A}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{20B6A8CC-43D7-4B72-82A1-310C2EB1FE4A}.Release|Any CPU.Build.0 = Release|Any CPU
+		{DA13612E-24FC-4FC4-B895-DE9722B57DBC}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{DA13612E-24FC-4FC4-B895-DE9722B57DBC}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{DA13612E-24FC-4FC4-B895-DE9722B57DBC}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{DA13612E-24FC-4FC4-B895-DE9722B57DBC}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

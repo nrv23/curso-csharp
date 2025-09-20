@@ -1,0 +1,7 @@
+La diferencia entre Add y Append es que Add es un metodo de la clase list que si modifica la lista original
+Append es de IEnumerable que no modifica la lista original, crea otra
+
+En Linq, cuando el query no se ejecuta usando algun metodo de materializacion como toList, toArray, toDictionary
+o cualquier otro similar, el query queda pendiente escuchando cualquier cambio que aplique a la coleccion 
+y cuando esa coleccion se recorre entonces aplica los cambios. Si se usa un metodo de materializacion
+al asignar el query a una variable, la consulta se ejecuta al instante.
