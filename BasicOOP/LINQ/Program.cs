@@ -185,6 +185,41 @@ Console.WriteLine($"{nameof(OrderDescendingAndThen)}");
 OrderBy.ToString(OrderDescendingAndThen);
 
 
+var firstElement = new First().GetFirstElement<int>(numbers, null);
+
+Console.WriteLine($"{nameof(firstElement)}  {firstElement}");
+
+var firstOddNumber = new First().GetFirstElement(numbers, n => n % 2 != 0);
+
+Console.WriteLine($"{nameof(firstOddNumber)}  {firstOddNumber}");
+
+
+var lastElement = new Last().GetLastElement(words1, null);
+
+Console.WriteLine($"Last element in collection {nameof(words1)} is {lastElement}");
+
+var lastElementWithContainsP = new Last().GetLastElement<string>(words1, w => w.Contains("p"));
+
+Console.WriteLine($"{nameof(lastElementWithContainsP)} {lastElementWithContainsP} ");
+
+var lastDogInPets = new Last().GetLastElement<Pet>(petList, p => p.PetType == PetType.Dog);
+
+Console.WriteLine($" lastDogInPets:  {lastDogInPets} ");
+
+var firstOrdefault = new First().GetFirstElementDefault<int>(new List<int>() { }, null);
+
+Console.WriteLine($"{nameof(firstOrdefault)} {firstOrdefault}");
+
+var firstOrdefaultString = new First().GetFirstElementDefault<string>(new List<string>() { }, null);
+
+Console.WriteLine($"{nameof(firstOrdefaultString)} {firstOrdefaultString}");
+
+var heaviestPet1 = petList.OrderByDescending(p => p.Weight).First();
+var heaviestPet2 = petList.OrderBy(p => p.Weight).Last();
+
+Console.WriteLine($"{nameof(heaviestPet1)} {heaviestPet1}");
+Console.WriteLine($"{nameof(heaviestPet2)} {heaviestPet2}");
+
 Console.ReadKey();
 
 bool IsAllUpper(IEnumerable<string> words)

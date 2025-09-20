@@ -8,3 +8,6 @@ al asignar el query a una variable, la consulta se ejecuta al instante.
 
 // All comprueba si todos los metodos de una coleccion cumplen con la condicion
 // Any comprueba si al menos uno cumple con la condicion
+
+First o last siempre devuelven algo o generan un excepcion si la coleccion esta vacia.
+FirstOrDefault y lastordefault devuelven un valor por defecto segun el tipo de dato de la coleccion si la lista esta vacia
