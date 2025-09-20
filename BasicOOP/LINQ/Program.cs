@@ -167,9 +167,25 @@ var CountListsContainingZeroLongerThan = new Count().CountListsContainingZeroLon
 
 Console.WriteLine($"{nameof(CountListsContainingZeroLongerThan)}: {CountListsContainingZeroLongerThan}");
 
+var collecionOrderedByName = new OrderBy().Order(petList);
+
+OrderBy.ToString(collecionOrderedByName);
+
+var orderDescendingOrAscending = new OrderBy().OrderDescendingOrAscending(petList, 0);
+
+OrderBy.ToString(orderDescendingOrAscending);
+
+Console.WriteLine(string.Join(",", numbers.OrderBy(n => n)));
+
+Console.WriteLine();
+
+var OrderDescendingAndThen = (IEnumerable<Pet>) petList.OrderByDescending(p => p.PetType).ThenBy(pt => pt.Name);
+
+Console.WriteLine($"{nameof(OrderDescendingAndThen)}");
+OrderBy.ToString(OrderDescendingAndThen);
+
+
 Console.ReadKey();
-
-
 
 bool IsAllUpper(IEnumerable<string> words)
 {
