@@ -5,3 +5,6 @@ En Linq, cuando el query no se ejecuta usando algun metodo de materializacion co
 o cualquier otro similar, el query queda pendiente escuchando cualquier cambio que aplique a la coleccion 
 y cuando esa coleccion se recorre entonces aplica los cambios. Si se usa un metodo de materializacion
 al asignar el query a una variable, la consulta se ejecuta al instante.
+
+// All comprueba si todos los metodos de una coleccion cumplen con la condicion
+// Any comprueba si al menos uno cumple con la condicion
