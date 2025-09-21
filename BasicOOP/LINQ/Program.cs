@@ -81,6 +81,7 @@ using System.Collections.Generic;
 
 var numbers = new List<int> { 1, 2, 3, 11, 12, 13, 9, 75, 99, -9, -4, -5 };
 var words1 = new List<string> { "hello", "world", "    ", "LINQ", "cSharp", "JAVA", "python" };
+var words5 = new List<string> { "a", "c", "LINQ", "cSharp", "JAVA", "python" };
 var numbersLargerThan10 = new Any().IsLargerThan10(numbers);
 
 Console.WriteLine($"Are there any numbers larger than 10? {numbersLargerThan10}");
@@ -219,6 +220,101 @@ var heaviestPet2 = petList.OrderBy(p => p.Weight).Last();
 
 Console.WriteLine($"{nameof(heaviestPet1)} {heaviestPet1}");
 Console.WriteLine($"{nameof(heaviestPet2)} {heaviestPet2}");
+
+var shortestWord = FindShortestWordExercise.FindShortestWord(words5);
+
+Console.WriteLine($"{nameof(shortestWord)} {shortestWord}");
+
+var evenNumbersInCOllection = new Where().GetEventNumbers(numbers);
+
+Console.WriteLine($"{nameof(evenNumbersInCOllection)} {string.Join(",", evenNumbersInCOllection)}");
+var petsHavierBetween10And100Kilos = new Where().GetPetsHavierBetween10And100Kilos(petList);
+
+Console.WriteLine($@"{nameof(petsHavierBetween10And100Kilos)} 
+{string.Join(Environment.NewLine, petsHavierBetween10And100Kilos)}
+");
+
+var especificPets = new Where().GetEspecificPets<Pet>(petList);
+
+Console.WriteLine($@"{nameof(especificPets)} 
+{string.Join(Environment.NewLine, especificPets)}
+");
+
+var getPetsByIndexSelectedForTheUser = new Where().GetPetsByIndexSelectedForTheUser(petList, new[] { 8, 7, 6, 5 });
+
+Console.WriteLine($@"{nameof(getPetsByIndexSelectedForTheUser)} 
+{string.Join(Environment.NewLine, getPetsByIndexSelectedForTheUser)}
+");
+
+/*
+24.03.2023 (Friday)
+24.03.2023 (Friday) -> will be excluded as duplicate
+25.03.2023 (Saturday) -> will be excluded as not a Friday
+31.03.2023 (Friday)
+08.03.2024 (Friday) 
+ */
+
+var getFridaysOfYear = GetFridaysOfYearExercise.GetFridaysOfYear(2023,new DateTime[] {
+    new DateTime(2023, 3, 24),
+    new DateTime(2023, 3, 24),
+    new DateTime(2023, 3, 25),
+    new DateTime(2023, 3, 31),
+    new DateTime(2024, 3, 08),
+});
+
+Console.WriteLine($@"{nameof(getFridaysOfYear)} 
+{string.Join(Environment.NewLine, getFridaysOfYear)}
+");
+
+var doubledNumbers = new Select().DoubledNumber(numbers);
+
+
+Console.WriteLine($@"{nameof(doubledNumbers)} 
+{string.Join(Environment.NewLine, doubledNumbers)}
+");
+
+var upperCaseWords = new Select().UpperCaseWords(words1);
+
+Console.WriteLine($@"{nameof(upperCaseWords)} 
+{string.Join(Environment.NewLine, upperCaseWords)}
+");
+
+var numbersAsStrings = new Select().NumbersAsStrings(numbers);
+Console.WriteLine($@"{nameof(numbersAsStrings)} 
+{string.Join(Environment.NewLine, numbersAsStrings)}
+");
+
+var indexedWords = new Select().IndexedWords(words1);
+Console.WriteLine($@"{nameof(indexedWords)} 
+{string.Join(Environment.NewLine, indexedWords)}
+");
+
+var heavyPets = petList.Where(p => p.Weight > 4)
+                       .Select(p => p.PetType)
+                       .Distinct();
+Console.WriteLine($@"{nameof(heavyPets)} 
+{string.Join(Environment.NewLine, heavyPets)}
+");
+
+
+var petsInitials = petList.OrderBy(p => p.Name)
+                          .Select(p => p.Name.First());
+
+// new { Count = l.Count, Average = l.Average() } esto en C# es un objeto anonimo
+var resultOfInts = list.Select(l => new { Count = l.Count, Average = l.Average() })
+                       .OrderByDescending(r => r.Average)
+                       .Select(s => $"{s.Count} {s.Average}");
+
+
+Console.WriteLine($@"{nameof(petsInitials)} 
+{string.Join(Environment.NewLine, petsInitials)}
+");
+
+
+Console.WriteLine($@"{nameof(resultOfInts)} 
+{string.Join(Environment.NewLine, resultOfInts)}
+");
+
 
 Console.ReadKey();
 

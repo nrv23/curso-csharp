@@ -38,10 +38,10 @@ using System.Diagnostics;
 //pair.ResetFirst();
 //Console.WriteLine($"First: {pair.First}, Second: {pair.Second}");
 
-//var numbers = new List<int> { 3, 5, 1, 8, -2, 7 };
+var numbers = new List<int> { 3, 5, 1, 8, -2, 7 };
 
-//var result = GetMaxAndMinNumber(numbers);
-//Console.WriteLine($"Max: {result.Item1}, Min: {result.Item2}, String data: {result.Item3}");
+var result = GetMaxAndMinNumber(numbers);
+Console.WriteLine($"Max: {result.Item1}, Min: {result.Item2}, String data: {result.Item3}");
 
 //var gemicTuple = new GenericTuple<int, string>(1, "Hello");
 

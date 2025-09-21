@@ -11,3 +11,5 @@ al asignar el query a una variable, la consulta se ejecuta al instante.
 
 First o last siempre devuelven algo o generan un excepcion si la coleccion esta vacia.
 FirstOrDefault y lastordefault devuelven un valor por defecto segun el tipo de dato de la coleccion si la lista esta vacia
+Select lo que hace es manipular los valores para la salida, no modifica la lista original
+// new { Count = l.Count, Average = l.Average() } esto en C# es un objeto anonimo
