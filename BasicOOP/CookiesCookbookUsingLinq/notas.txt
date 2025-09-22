@@ -9,3 +9,5 @@ La inyección se aplica pasando como parámetro una interfaz o clase abstracta en 
 IEnumerable es una interfaz generica de datos de solo lectura.Y se puede recorrer con foreach.
 
 La didferencia entre metodos abtract y virtual es que los metodos abstractos no tienen implementacion y deben ser implementados en las clases derivadas, mientras que los metodos virtuales tienen una implementacion por defecto que puede ser sobrescrita en las clases derivadas si es necesario.
+
+Los metodos select y where devuelven una lista de productos, los metodos last, firts o derivados devuelven objetos

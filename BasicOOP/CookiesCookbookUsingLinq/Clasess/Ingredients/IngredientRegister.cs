@@ -23,14 +23,24 @@ namespace CookiesCookbook.Clasess.Ingredients
 
         public Ingredient? GetById(int id)
         {
-            Ingredient? result = null;
-            foreach (var ingredient in All)
+            //var  countOfIngredientsWithTheSameId = All.Count(ig => ig.ID == id);
+            //var  countOfIngredientsWithTheSameId = All.Where(ig => ig.ID == id).DistinctBy(p=> p.ID);
+            var  countOfIngredientsWithTheSameId = All.Where(ig => ig.ID == id);
+
+            // validar id actual si esta duplicado en la lista
+
+            if (countOfIngredientsWithTheSameId.Count() > 1)
             {
-                if (ingredient.ID != id) continue;
-                result = ingredient;
+                throw new InvalidOperationException($"ingredient with id {id} it is repeat");
+            }
+            // validar otros ids duplicados
+            if(All.Select(ingredient => ingredient.ID).Distinct().Count() !=  All.Count())
+            {
+                throw new InvalidOperationException($"SOme ingredients are repeated");
             }
 
-            return result;
+            //return All.FirstOrDefault(ig => ig.ID == id);
+           return countOfIngredientsWithTheSameId.FirstOrDefault();
         }
     }
 }

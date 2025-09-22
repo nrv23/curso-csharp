@@ -35,18 +35,11 @@ namespace CookiesCookbook.Clasess
 
         public void Write(string filePath, List<Recipe> allRecipes)
         {
-            var recipesAsStrings = new List<string>();
-            foreach (var recipe in allRecipes)
-            {
-                var allIds = new List<int>();
-                foreach(var ingredient in recipe.Ingredients)
-                {
-                    allIds.Add(ingredient.ID);
-                }
-
-                recipesAsStrings.Add(string.Join(Separator, allIds));
-            }
-            _stringsRepository.Write(filePath, recipesAsStrings);
+            var recipesAsStrings = allRecipes.Select(recipe => {
+                var allIds = recipe.Ingredients.Select(i => i.ID);
+                return string.Join(Separator, allIds);
+            });
+            _stringsRepository.Write(filePath, recipesAsStrings.ToList());
         }
     }
 }

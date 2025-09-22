@@ -4,7 +4,7 @@ using CookiesCookbook.Interfaces;
 
 namespace CookiesCookbook.Clasess
 {
-    public class RecipesConsoleUserInteraction: IRecipesUserIntraction
+    public class RecipesConsoleUserInteraction : IRecipesUserIntraction
     {
         private readonly IngredientRegister _ingredientRegister;
 
@@ -21,21 +21,28 @@ namespace CookiesCookbook.Clasess
 
         public void PrintExistingRecipes(IEnumerable<Recipe> recipes)
         {
-            if(recipes.Count() > 0)
-            {
-                Console.WriteLine($"Existing recipes are:" + Environment.NewLine);
-                var count = 1;
-                foreach (var recipe in recipes)
-                {
-                    Console.WriteLine($"*****{count}*****");
-                    Console.WriteLine(recipe);
-                    Console.WriteLine();
-                    count++;
-                }
-            }
+            //if(recipes.Count() > 0)
+            //{
+            //    Console.WriteLine($"Existing recipes are:" + Environment.NewLine);
+            //    var count = 1;
+            //    foreach (var recipe in recipes)
+            //    {
+            //        Console.WriteLine($"*****{count}*****");
+            //        Console.WriteLine(recipe);
+            //        Console.WriteLine();
+            //        count++;
+            //    }
+            //}
+
+            var recipesAsStrings = recipes.Select((recipe, index) =>
+                $@"*****{index + 1}*****
+                {Environment.NewLine}
+                {recipe}");
+
+            Console.WriteLine(string.Join(Environment.NewLine, recipesAsStrings));
         }
 
- 
+
 
         public void PromptToCreateReciep()
         {
@@ -43,12 +50,7 @@ namespace CookiesCookbook.Clasess
                 Create a new cookie recipe !
                 Available ingredientes are:
             ");
-
-            foreach(var ingredient in _ingredientRegister.All)
-            {
-                Console.WriteLine(ingredient.ToString());
-            }
-
+            Console.WriteLine(string.Join(Environment.NewLine, _ingredientRegister.All));
         }
         public void ShowMessage(string message)
         {
@@ -65,21 +67,22 @@ namespace CookiesCookbook.Clasess
                 Console.WriteLine("Type the name of the ingredient to add or type 'exit' to finish:");
                 var userInput = Console.ReadLine();
 
-                if(int.TryParse(userInput, out int ingredientid ))
+                if (int.TryParse(userInput, out int ingredientid))
                 {
 
                     var ingredient = _ingredientRegister.GetById(ingredientid);
 
-                    if( ingredient is not null)
+                    if (ingredient is not null)
                     {
                         ingredients.Add(ingredient);
                     }
 
-                } else
+                }
+                else
                 {
                     shallStop = true; // sino es un ingrediente valido, salimos
                 }
-                
+
             }
 
             return ingredients;
