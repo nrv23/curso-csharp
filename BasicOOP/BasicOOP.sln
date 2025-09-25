@@ -30,6 +30,8 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "CustomCache", "CustomCache\
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "LINQ", "LINQ\LINQ.csproj", "{DA13612E-24FC-4FC4-B895-DE9722B57DBC}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "UnderTheHoddDotNet", "UnderTheHoddDotNet\UnderTheHoddDotNet.csproj", "{0441B3D3-27CC-4CD2-8520-6800A7E46644}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -80,6 +82,10 @@ Global
 		{DA13612E-24FC-4FC4-B895-DE9722B57DBC}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{DA13612E-24FC-4FC4-B895-DE9722B57DBC}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{DA13612E-24FC-4FC4-B895-DE9722B57DBC}.Release|Any CPU.Build.0 = Release|Any CPU
+		{0441B3D3-27CC-4CD2-8520-6800A7E46644}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{0441B3D3-27CC-4CD2-8520-6800A7E46644}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{0441B3D3-27CC-4CD2-8520-6800A7E46644}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{0441B3D3-27CC-4CD2-8520-6800A7E46644}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

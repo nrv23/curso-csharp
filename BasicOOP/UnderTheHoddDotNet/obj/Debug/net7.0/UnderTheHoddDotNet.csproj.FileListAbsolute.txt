@@ -1,0 +1,15 @@
+C:\Users\navem\source\repos\TodoList\BasicOOP\UnderTheHoddDotNet\bin\Debug\net7.0\UnderTheHoddDotNet.exe
+C:\Users\navem\source\repos\TodoList\BasicOOP\UnderTheHoddDotNet\bin\Debug\net7.0\UnderTheHoddDotNet.deps.json
+C:\Users\navem\source\repos\TodoList\BasicOOP\UnderTheHoddDotNet\bin\Debug\net7.0\UnderTheHoddDotNet.runtimeconfig.json
+C:\Users\navem\source\repos\TodoList\BasicOOP\UnderTheHoddDotNet\bin\Debug\net7.0\UnderTheHoddDotNet.dll
+C:\Users\navem\source\repos\TodoList\BasicOOP\UnderTheHoddDotNet\bin\Debug\net7.0\UnderTheHoddDotNet.pdb
+C:\Users\navem\source\repos\TodoList\BasicOOP\UnderTheHoddDotNet\obj\Debug\net7.0\UnderTheHoddDotNet.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\navem\source\repos\TodoList\BasicOOP\UnderTheHoddDotNet\obj\Debug\net7.0\UnderTheHoddDotNet.AssemblyInfoInputs.cache
+C:\Users\navem\source\repos\TodoList\BasicOOP\UnderTheHoddDotNet\obj\Debug\net7.0\UnderTheHoddDotNet.AssemblyInfo.cs
+C:\Users\navem\source\repos\TodoList\BasicOOP\UnderTheHoddDotNet\obj\Debug\net7.0\UnderTheHoddDotNet.csproj.CoreCompileInputs.cache
+C:\Users\navem\source\repos\TodoList\BasicOOP\UnderTheHoddDotNet\obj\Debug\net7.0\UnderTheHoddDotNet.sourcelink.json
+C:\Users\navem\source\repos\TodoList\BasicOOP\UnderTheHoddDotNet\obj\Debug\net7.0\UnderTheHoddDotNet.dll
+C:\Users\navem\source\repos\TodoList\BasicOOP\UnderTheHoddDotNet\obj\Debug\net7.0\refint\UnderTheHoddDotNet.dll
+C:\Users\navem\source\repos\TodoList\BasicOOP\UnderTheHoddDotNet\obj\Debug\net7.0\UnderTheHoddDotNet.pdb
+C:\Users\navem\source\repos\TodoList\BasicOOP\UnderTheHoddDotNet\obj\Debug\net7.0\UnderTheHoddDotNet.genruntimeconfig.cache
+C:\Users\navem\source\repos\TodoList\BasicOOP\UnderTheHoddDotNet\obj\Debug\net7.0\ref\UnderTheHoddDotNet.dll

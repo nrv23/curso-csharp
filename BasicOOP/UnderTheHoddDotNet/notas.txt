@@ -1,0 +1,16 @@
+Valores por tipo se guardarán en la pila (stack) y los valores por referencia se guardarán en el heap (montículo) y pila.
+
+// Los tipos por valor incluyen tipos primitivos como int, float, bool, char, struct y enum.
+// Los tipos por referencia incluyen clases, interfaces, arrays y delegados y cualquier objeto.
+
+En los valores de referencia, cuando son parametros, se crea una copia que apunta a la misma dirección de memoria en el heap. Por eso 
+si se moodifcar un objeto que apunta al original, se modifican ambos porque apuntan a la misma dirección de memoria.
+
+En los tipos por valor se crea una copia del valor original , por lo que si se modifica el valor de la copia, el original no se ve afectado.
+En C# el Any type es el object type, que es la superclase de todos los tipos en C#.
+
+para recursos queel GC no controla, se usa la interfaz IDisposable para implementar el metodo Dispose y liberar recursos de metodos como lectura 
+o escritura de archivos, conexiones a bds o conexiones de red
+La palabra reservada using se usa para metodos que usen recursos que necesiten ser liberados despues.
+Implicitamente llama al metodo Dispose al finalizar el bloque using. Pero si un metodo va usar using, debe ser un clase que implemente IDisposable 
+y su metodo Dispose.
