@@ -30,7 +30,13 @@ const string path = "test.txt";
 
 // forma legacy de usar using
 
-using(var fileWriter = new FileWriter(path))
+using (var listString = new AllLinesFromTextFileReader(path))
+{
+    var lines = listString.ReadAllLines();
+    Console.WriteLine("lines" + string.Join(",", lines));
+}
+
+using (var fileWriter = new FileWriter(path))
 {
     fileWriter.Write("test1");
     fileWriter.Write("test2");
@@ -47,7 +53,8 @@ Console.WriteLine(reader.ReadLineNumber(4));
 void AddOneToNumber(int num)
 {
     num++;
-};
+}
+;
 
 void HaveBirthday(Person p)
 {
