@@ -1,0 +1,15 @@
+C:\Users\navem\source\repos\TodoList\BasicOOP\AdvancedTypes\bin\Debug\net7.0\AdvancedTypes.exe
+C:\Users\navem\source\repos\TodoList\BasicOOP\AdvancedTypes\bin\Debug\net7.0\AdvancedTypes.deps.json
+C:\Users\navem\source\repos\TodoList\BasicOOP\AdvancedTypes\bin\Debug\net7.0\AdvancedTypes.runtimeconfig.json
+C:\Users\navem\source\repos\TodoList\BasicOOP\AdvancedTypes\bin\Debug\net7.0\AdvancedTypes.dll
+C:\Users\navem\source\repos\TodoList\BasicOOP\AdvancedTypes\bin\Debug\net7.0\AdvancedTypes.pdb
+C:\Users\navem\source\repos\TodoList\BasicOOP\AdvancedTypes\obj\Debug\net7.0\AdvancedTypes.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\navem\source\repos\TodoList\BasicOOP\AdvancedTypes\obj\Debug\net7.0\AdvancedTypes.AssemblyInfoInputs.cache
+C:\Users\navem\source\repos\TodoList\BasicOOP\AdvancedTypes\obj\Debug\net7.0\AdvancedTypes.AssemblyInfo.cs
+C:\Users\navem\source\repos\TodoList\BasicOOP\AdvancedTypes\obj\Debug\net7.0\AdvancedTypes.csproj.CoreCompileInputs.cache
+C:\Users\navem\source\repos\TodoList\BasicOOP\AdvancedTypes\obj\Debug\net7.0\AdvancedTypes.sourcelink.json
+C:\Users\navem\source\repos\TodoList\BasicOOP\AdvancedTypes\obj\Debug\net7.0\AdvancedTypes.dll
+C:\Users\navem\source\repos\TodoList\BasicOOP\AdvancedTypes\obj\Debug\net7.0\refint\AdvancedTypes.dll
+C:\Users\navem\source\repos\TodoList\BasicOOP\AdvancedTypes\obj\Debug\net7.0\AdvancedTypes.pdb
+C:\Users\navem\source\repos\TodoList\BasicOOP\AdvancedTypes\obj\Debug\net7.0\AdvancedTypes.genruntimeconfig.cache
+C:\Users\navem\source\repos\TodoList\BasicOOP\AdvancedTypes\obj\Debug\net7.0\ref\AdvancedTypes.dll
