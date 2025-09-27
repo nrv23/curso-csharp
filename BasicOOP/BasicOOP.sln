@@ -32,6 +32,8 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "LINQ", "LINQ\LINQ.csproj", 
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "UnderTheHoddDotNet", "UnderTheHoddDotNet\UnderTheHoddDotNet.csproj", "{0441B3D3-27CC-4CD2-8520-6800A7E46644}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "NetUnderTheHoodAssignment", "..\..\..\..\Downloads\NetUnderTheHoodAssignment\NetUnderTheHoodAssignment\NetUnderTheHoodAssignment\NetUnderTheHoodAssignment.csproj", "{30DAF143-A7EF-2CAE-2ADC-810B47848DF1}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -86,6 +88,10 @@ Global
 		{0441B3D3-27CC-4CD2-8520-6800A7E46644}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{0441B3D3-27CC-4CD2-8520-6800A7E46644}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{0441B3D3-27CC-4CD2-8520-6800A7E46644}.Release|Any CPU.Build.0 = Release|Any CPU
+		{30DAF143-A7EF-2CAE-2ADC-810B47848DF1}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{30DAF143-A7EF-2CAE-2ADC-810B47848DF1}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{30DAF143-A7EF-2CAE-2ADC-810B47848DF1}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{30DAF143-A7EF-2CAE-2ADC-810B47848DF1}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
