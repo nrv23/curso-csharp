@@ -1,0 +1,22 @@
+La diferencia fundamental entre struct y class es que class es valor de referencia y struct es valor de tipo valor.
+Esto significa que cuando se pasa una instancia de una clase a una función, se pasa una referencia a la misma instancia, 
+mientras que cuando se pasa una instancia de una estructura, se pasa una copia de la misma.
+
+Como las clases, los structs pueden tener propiedades y métodos, pero no pueden heredar de otras estructuras o clases.
+Tienen tambien cibstuctores y destructores, pero no pueden tener inicializadores de desinicialización.
+
+Solo los valores de referecia pueden ser nulos.
+Structs pueden implementar interfaces
+Structs no pueden tener propiedades de su mismo tipo (no pueden ser recursivos)
+
+D2 significa numeros decimales de 2 digitos.
+
+La palabra with permite modificar propiedades de structs siempre que este en get;init;
+el with crea una copia del struct original pasando como argumento las propiedades con los nuevos valores
+Una sugerencia es que los structs siempre deben ser inmutables
+
+IEquatable es una interfaz que permite comparar dos instancias, tanto structs como clases. Porque su interfaz se implementa
+y la funcion eals se sobreescribe, se puede comparar dos instancias de una clase o struct
+
+IComparable es una interfaz que permite comparar dos instancias y determinar su orden. Se utiliza para ordenar colecciones de objetos.
+Implementa el metodo CompareTo que devuelve un entero que indica si la instancia actual es menor, igual o mayor que otra instancia.

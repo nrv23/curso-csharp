@@ -15,6 +15,15 @@ namespace AdvancedTypes.clasess
         public string Name2 { get; }
         public int YearOfBirth { get; }
 
+
+        public override bool Equals(object? obj)
+        {
+           return obj is Person person && // patron matching
+                                          // pregunta primero si obj es de tipo Person y si es asi lo asigna a la variable person
+                   Name == person.Name &&
+                   Name2 == person.Name2 &&
+                   YearOfBirth == person.YearOfBirth;
+        }
         public Person(string name,string name2, int yearOfBirth)
         {
             Name = name;
