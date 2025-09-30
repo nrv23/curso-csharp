@@ -20,3 +20,10 @@ y la funcion eals se sobreescribe, se puede comparar dos instancias de una clase
 
 IComparable es una interfaz que permite comparar dos instancias y determinar su orden. Se utiliza para ordenar colecciones de objetos.
 Implementa el metodo CompareTo que devuelve un entero que indica si la instancia actual es menor, igual o mayor que otra instancia.
+la palabra reservada implicit en un metood implica que puedo convertir un tipo a otro sin necesidad de un casteo explicito.
+pero se debe generar un metoodo que haga la conversion.
+
+Si una clase o estrutura anula el metodo Equals, tambien debe anular el metodo GetHashCode.
+
+las tuplas en c# son inmutables, no se pueden cambiar sus valores despues de ser creadas. Son valor de referencia.
+Las value tuples son structs, por lo que son valor de tipo valor. Y Son mutables, se pueden cambiar sus valores despues de ser creadas.

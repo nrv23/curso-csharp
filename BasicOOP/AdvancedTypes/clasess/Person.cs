@@ -8,6 +8,7 @@ namespace AdvancedTypes.clasess
 {
     public class Person
     {
+        public int Id { get; init; }
         [StringLengthValidate(2,10)]
         public string Name { get; }
 
@@ -18,17 +19,21 @@ namespace AdvancedTypes.clasess
 
         public override bool Equals(object? obj)
         {
-           return obj is Person person && // patron matching
-                                          // pregunta primero si obj es de tipo Person y si es asi lo asigna a la variable person
-                   Name == person.Name &&
-                   Name2 == person.Name2 &&
-                   YearOfBirth == person.YearOfBirth;
+            return obj is Person person && // patron matching
+                                        // pregunta primero si obj es de tipo Person y si es asi lo asigna a la variable person
+                   Id == person.Id;
         }
-        public Person(string name,string name2, int yearOfBirth)
+
+        public override int GetHashCode()
+        {
+            return Id;
+        }
+        public Person(string name, string name2, int yearOfBirth, int id)
         {
             Name = name;
             Name2 = name2;
             YearOfBirth = yearOfBirth;
+            Id = id;
         }
 
         public Person(string name) => Name = name;

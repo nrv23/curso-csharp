@@ -33,6 +33,14 @@ namespace AdvancedTypes.structs
         public static bool operator == (Point left, Point right) => left.Equals(right);
         public static bool operator != (Point left, Point right) => !left.Equals(right);
 
+        // conversiones implicitas en una estrcutra 
+
+        public static implicit operator Point(Tuple<int,int> tuple) => new Point(tuple.Item1, tuple.Item2);
+
+        public override int GetHashCode()
+        {
+            return HashCode.Combine(X, Y);
+        }
 
         //public int CompareTo(Point obj)
         //{
