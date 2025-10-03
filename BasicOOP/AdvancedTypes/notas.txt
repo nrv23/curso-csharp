@@ -27,3 +27,7 @@ Si una clase o estrutura anula el metodo Equals, tambien debe anular el metodo G
 
 las tuplas en c# son inmutables, no se pueden cambiar sus valores despues de ser creadas. Son valor de referencia.
 Las value tuples son structs, por lo que son valor de tipo valor. Y Son mutables, se pueden cambiar sus valores despues de ser creadas.
+
+Los valores de tipo no guardan valores nulos, a menos que se utilice el operador ? despues del tipo de dato.
+Nullable es una estructura que permite representar un valor de tipo valor que puede ser nulo.
+expone las pripiedades HasValue y Value. HasValue indica si el valor es nulo o no. Value devuelve el valor si no es nulo, de lo contrario lanza una excepcion.

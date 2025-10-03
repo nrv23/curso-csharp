@@ -1,0 +1,15 @@
+C:\Users\navem\source\repos\TodoList\BasicOOP\StarWarsPlanetsStats\bin\Debug\net7.0\StarWarsPlanetsStats.exe
+C:\Users\navem\source\repos\TodoList\BasicOOP\StarWarsPlanetsStats\bin\Debug\net7.0\StarWarsPlanetsStats.deps.json
+C:\Users\navem\source\repos\TodoList\BasicOOP\StarWarsPlanetsStats\bin\Debug\net7.0\StarWarsPlanetsStats.runtimeconfig.json
+C:\Users\navem\source\repos\TodoList\BasicOOP\StarWarsPlanetsStats\bin\Debug\net7.0\StarWarsPlanetsStats.dll
+C:\Users\navem\source\repos\TodoList\BasicOOP\StarWarsPlanetsStats\bin\Debug\net7.0\StarWarsPlanetsStats.pdb
+C:\Users\navem\source\repos\TodoList\BasicOOP\StarWarsPlanetsStats\obj\Debug\net7.0\StarWarsPlanetsStats.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\navem\source\repos\TodoList\BasicOOP\StarWarsPlanetsStats\obj\Debug\net7.0\StarWarsPlanetsStats.AssemblyInfoInputs.cache
+C:\Users\navem\source\repos\TodoList\BasicOOP\StarWarsPlanetsStats\obj\Debug\net7.0\StarWarsPlanetsStats.AssemblyInfo.cs
+C:\Users\navem\source\repos\TodoList\BasicOOP\StarWarsPlanetsStats\obj\Debug\net7.0\StarWarsPlanetsStats.csproj.CoreCompileInputs.cache
+C:\Users\navem\source\repos\TodoList\BasicOOP\StarWarsPlanetsStats\obj\Debug\net7.0\StarWarsPlanetsStats.sourcelink.json
+C:\Users\navem\source\repos\TodoList\BasicOOP\StarWarsPlanetsStats\obj\Debug\net7.0\StarWarsPlanetsStats.dll
+C:\Users\navem\source\repos\TodoList\BasicOOP\StarWarsPlanetsStats\obj\Debug\net7.0\refint\StarWarsPlanetsStats.dll
+C:\Users\navem\source\repos\TodoList\BasicOOP\StarWarsPlanetsStats\obj\Debug\net7.0\StarWarsPlanetsStats.pdb
+C:\Users\navem\source\repos\TodoList\BasicOOP\StarWarsPlanetsStats\obj\Debug\net7.0\StarWarsPlanetsStats.genruntimeconfig.cache
+C:\Users\navem\source\repos\TodoList\BasicOOP\StarWarsPlanetsStats\obj\Debug\net7.0\ref\StarWarsPlanetsStats.dll

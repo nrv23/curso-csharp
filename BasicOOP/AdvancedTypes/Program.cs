@@ -1,6 +1,8 @@
 ﻿
 using AdvancedTypes.clasess;
 using AdvancedTypes.structs;
+using System.Net.Http;
+using System.Text.Json;
 //var converter = new ObjectToTextConverter();
 
 //Console.WriteLine(converter.Convert(new Pet("Buddy", PetType.Dog, 12.5f)));
@@ -72,25 +74,74 @@ using AdvancedTypes.structs;
 
 //Console.WriteLine(time3);
 
-var person1 = new Person("John", "Doe", 1980,1);
-var person2 = new Person("John", "Doe", 1980, 1);
-var person3 = new Person("John", "Doe", 1980, 6);
+//var person1 = new Person("John", "Doe", 1980,1);
+//var person2 = new Person("John", "Doe", 1980, 1);
+//var person3 = new Person("John", "Doe", 1980, 6);
 
-Console.WriteLine("hashcode person1 " + person1.GetHashCode());
-Console.WriteLine("hashcode person2 " + person2.GetHashCode());
-Console.WriteLine("hashcode person3 " + person3.GetHashCode());
+//Console.WriteLine("hashcode person1 " + person1.GetHashCode());
+//Console.WriteLine("hashcode person2 " + person2.GetHashCode());
+//Console.WriteLine("hashcode person3 " + person3.GetHashCode());
 
-// declaracion de valuetuples
+//// declaracion de valuetuples
 
-var valueTple = (Name: "John", Age: 30);    // forma anonima
-valueTple.Name = "otro";
-Console.WriteLine(valueTple);
-var valuetupe2 = new ValueTuple<string, int>("John", 30); // forma explicita    
-valuetupe2.Item1 = "Doe";
-Console.WriteLine(valuetupe2);
+//var valueTple = (Name: "John", Age: 30);    // forma anonima
+//valueTple.Name = "otro";
+//Console.WriteLine(valueTple);
+//var valuetupe2 = new ValueTuple<string, int>("John", 30); // forma explicita    
+//valuetupe2.Item1 = "Doe";
+//Console.WriteLine(valuetupe2);
 
-// variables que permiten null
+//// variables que permiten null
 
-int? numerOrNull = null;
+//int? numerOrNull = null;
+//string textOrNull = null;
+
+//Nullable<int> numberOrNull2 = null; // forma explicita de declarar un nullable
+
+//if(numerOrNull.HasValue)
+//{
+//    Console.WriteLine(numerOrNull.Value);
+//}
+//else
+//{
+//    Console.WriteLine("numerOrNull is null");
+//}
+
+
+//// metodos con reestruciones de null    
+//string GetTextOrDefault(string text) 
+//{
+//    return text ?? "default"; // null coalescing operator
+//}
+
+//Console.WriteLine(GetTextOrDefault(null!)); // el ! indica que se sabe que no es null
+
+
+//void SomeMethod<T>(T value) where T : class? // permite que T sea una clase o null
+//{
+//    if(value == null)
+//    {
+//        Console.WriteLine("value is null");
+//    }
+//    else
+//    {
+//        Console.WriteLine(value.ToString());
+//    }
+//}
+
+//SomeMethod<string>(null!);// el ! indica que se sabe que no es null
+
+var baseUrl = "https://swapi.py4e.com/api/";
+var reqestUrl = "starships";
+
+IAPIDataReader dataReader = new APIDataReader();    
+var data = await dataReader.ReadData(baseUrl, reqestUrl);
+var json = JsonSerializer.Deserialize<DataResult>(data);
+
+foreach(var starship in json!.results)
+{
+    Console.WriteLine($"{starship.name} - {starship.model}");
+}
+
 
 Console.ReadKey();
