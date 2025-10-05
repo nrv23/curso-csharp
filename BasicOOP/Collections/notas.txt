@@ -1,0 +1,2 @@
+// las colecciones que no implementan IEnumerable no pueden ser usadas en foreach
+En las colecciones que usan IEnumerator su indice empieza en -1

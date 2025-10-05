@@ -38,6 +38,8 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "AdvancedTypes", "AdvancedTy
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "StarWarsPlanetsStats", "StarWarsPlanetsStats\StarWarsPlanetsStats.csproj", "{7D6E4210-FEF4-44AB-9CD8-5A8A7477E16C}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Collections", "Collections\Collections.csproj", "{F9DE91DE-3B75-4197-B8AF-A6414645D125}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -104,6 +106,10 @@ Global
 		{7D6E4210-FEF4-44AB-9CD8-5A8A7477E16C}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{7D6E4210-FEF4-44AB-9CD8-5A8A7477E16C}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{7D6E4210-FEF4-44AB-9CD8-5A8A7477E16C}.Release|Any CPU.Build.0 = Release|Any CPU
+		{F9DE91DE-3B75-4197-B8AF-A6414645D125}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{F9DE91DE-3B75-4197-B8AF-A6414645D125}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{F9DE91DE-3B75-4197-B8AF-A6414645D125}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{F9DE91DE-3B75-4197-B8AF-A6414645D125}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
