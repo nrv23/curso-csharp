@@ -1,2 +1,7 @@
 // las colecciones que no implementan IEnumerable no pueden ser usadas en foreach
 En las colecciones que usan IEnumerator su indice empieza en -1
+
+Cuando se necesita implementar IEnumerable se debe implementar tambien IEnumerator pero 
+IEnumerator tiene una impleentacion explicita e implícita.
+La implementación explícita se usa para evitar conflictos de nombres y solo se puede acceder a través de una referencia de la interfaz.
+La implementación implícita es la forma común de implementar una interfaz y se puede acceder directamente a través de la instancia de la clase.

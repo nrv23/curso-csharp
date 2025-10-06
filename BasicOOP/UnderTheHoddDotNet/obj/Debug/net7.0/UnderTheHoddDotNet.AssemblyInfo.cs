@@ -14,7 +14,7 @@ using System.Reflection;
 [assembly: System.Reflection.AssemblyCompanyAttribute("UnderTheHoddDotNet")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Debug")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+a6639bbf27b731a6901442d8681a0c3d2e86cff1")]
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+ae5a8d7024475526b60967e736db5dbc38aee3ea")]
 [assembly: System.Reflection.AssemblyProductAttribute("UnderTheHoddDotNet")]
 [assembly: System.Reflection.AssemblyTitleAttribute("UnderTheHoddDotNet")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]
