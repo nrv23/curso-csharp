@@ -255,6 +255,14 @@ foreach (var number in GetBeforeFirstNegativeNumber(new List<int> { 1, 2, 3, -1,
 {
     Console.WriteLine($"number before negative: {number}");
 }
+
+var nullsList = new List<string?> { "first", "second", null, "third", "fourth", "fifth" };
+
+var exercise = new YieldExercise().GetAllAfterLastNullReversed(nullsList);
+
+Console.WriteLine($"{string.Join(",", exercise)}");
+
+Console.ReadKey();
 IEnumerable<int> GetBeforeFirstNegativeNumber(IEnumerable<int> numbers)
 {
     foreach (var number in numbers)
@@ -267,7 +275,7 @@ IEnumerable<int> GetBeforeFirstNegativeNumber(IEnumerable<int> numbers)
     }
 }
 
-Console.ReadKey();
+
 
 public static class Calculator
 {
@@ -349,7 +357,15 @@ class CustomCollection<T> : IEnumerable<T>
     }
     public IEnumerator<T> GetEnumerator()
     {
-       return new WordsEnumerator<T>(items);
+       //return new WordsEnumerator<T>(items);
+
+        //foreach(var item in items)
+        //{
+        //    yield return item;
+        //}
+
+        IEnumerable<T> items2 = items;
+        return items2.GetEnumerator();
     }
 };
 
