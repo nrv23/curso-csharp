@@ -138,7 +138,7 @@ public static class ListExtensions
             else if (itemToFind.CompareTo(list[middleIndex]) < 0) // si devuelve menos 1 entonces el valor es menor 
             {
                 rightBound = middleIndex - 1;
-            } else
+            } else  
             {
                 leftBound = middleIndex + 1;
             }
@@ -219,4 +219,4 @@ class WordsEnumerator<T> : IEnumerator<T>
     {
         // No resources to dispose
     }   
-}
+} 
