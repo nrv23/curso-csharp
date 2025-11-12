@@ -5,3 +5,23 @@ Cuando se necesita implementar IEnumerable se debe implementar tambien IEnumerat
 IEnumerator tiene una impleentacion explicita e implícita.
 La implementación explícita se usa para evitar conflictos de nombres y solo se puede acceder a través de una referencia de la interfaz.
 La implementación implícita es la forma común de implementar una interfaz y se puede acceder directamente a través de la instancia de la clase.
+
+Los HashSet no permiten elementos duplicados y no garantizan el orden de los elementos. 
+Si se ingresan elementos duplicados, estos serán ignorados.
+
+las cosas funciona como FIFO(Primero entrar, primero en salir)
+
+en las cosas de prioridad se reciben elementos con una prioridad asociada y se procesan en orden de prioridad,
+donde los elementos con mayor prioridad se procesan antes que los de menor prioridad.
+Las colas de prioridad pueden ser implementadas usando heaps (montículos) para optimizar el acceso al elemento de mayor prioridad.
+
+Las pilas son estructuras de datos que se implemtan con el patron LIFO(ultimo en entrar primero en salir)
+
+params se usa para pasar un numero variable de argumentos a un metodo. Se declara usando la palabra clave params seguida del tipo de datos y el nombre del parametro.
+Se debe usar como el ultimo parametro en la lista de parametros del metodo.
+con params se puede pasar un array o una lista de argumentos separados por comas.
+de manera que se puede usar un metodo con sobrecarga para aceptar tanto un numero fijo de argumentos como un numero variable de argumentos.
+
+En C# los metodos que usen yield return deben devolver un tipo que implemente IEnumerable o IEnumerator.
+Los metodos que usan yield return permiten crear iteradores personalizados de manera sencilla, y no 
+es necesario siempre usar ciclos para recorrer colecciones.

@@ -1,9 +1,12 @@
 ﻿
 
+using System;
 using System.Collections;
+using System.Collections.Generic;
 using System.Collections.ObjectModel;
 using System.Diagnostics;
-
+using Collections.exercises;
+using Collections.extensions;
 string text = "Hello, World!";
 
 var customeCollection = new CustomCollection<string>(new string[] { "Hello", "from", "Custom", "Collection" });
@@ -106,7 +109,7 @@ var efficientList = new List<int>(input);
 
 list.Clear();
 list.TrimExcess(); // libera la memoria no usada por la lista
-Console.ReadKey();
+
 
 // agregar una lista de elementos dentro de la lista 
 
@@ -117,6 +120,159 @@ list.AddRange(input); // agrega una lista de elementos dentro de la lista
 list.Remove(12); // elimina la primera ocurrencia del elemento 12
 list.RemoveRange(list.IndexOf(20), 5); // elimina 5 elementos a partir del indice del elemento 20
 list.RemoveAt(list.IndexOf(30)); // elimina el elemento en el indice del elemento 30
+
+// probar el metodo CreateUnion
+
+var unionSet = HashSetsUnionExercise.CreateUnion(
+    new HashSet<int> { 1, 2, 3, 4, 5 },
+    new HashSet<int> { 4, 5, 6, 7, 8 }
+    );
+
+Console.WriteLine($"\nUsando HashSetsUnionExercise\n");
+Console.WriteLine($"unionSet {string.Join(",", unionSet)}");
+
+// colas 
+
+var queue = new Queue<string>();
+// agregar elementos a la cola
+queue.Enqueue("First");
+queue.Enqueue("Second");
+queue.Enqueue("Third");
+
+Console.WriteLine($"\nUsando Queue\n");
+
+// procesar elementos de la cola
+while (queue.Count > 0)
+{
+    var itemBeforeDelete = queue.Peek(); // obtiene el elemento al frente de la cola sin eliminarlo
+    Console.WriteLine($"itemBeforeDelete item: {itemBeforeDelete}");
+    var item = queue.Dequeue(); // elimina el elemento de la cola y lo retorna
+    Console.WriteLine($"Deleted item: {item}");
+}
+
+// colas de prioridad
+var priorityQueue = new PriorityQueue<string, int>();
+
+// agregar elementos a la cola de prioridad
+// el segundo parametro es la prioridad, mientras menor sea el valor mayor es la prioridad
+priorityQueue.Enqueue("Low priority task", 3);
+priorityQueue.Enqueue("High priority task", 1);
+priorityQueue.Enqueue("Medium priority task", 2);
+Console.WriteLine($"\nUsando PriorityQueue\n");
+
+// procesar elementos de la cola de prioridad
+while (priorityQueue.Count > 0)
+{
+    var itemBeforeDelete = priorityQueue.Peek(); // obtiene el elemento al frente de la cola sin eliminarlo
+    Console.WriteLine($"itemBeforeDelete item: {itemBeforeDelete}");
+
+    var item = priorityQueue.Dequeue(); // elimina el elemento de la cola de prioridad y lo retorna
+    Console.WriteLine($"Processing task: {item}");
+}
+// pilas  
+
+
+var stack = new Stack<string>();
+
+stack.Push("a");
+stack.Push("b");
+stack.Push("c");
+stack.Push("d");
+
+Console.WriteLine($"\nUsando Stack extension\n");
+Console.WriteLine(stack.DoesContainAny("d", "a"));
+
+
+
+Console.WriteLine("Obtener el elemento de la pila sin eliminarlo");
+Console.WriteLine(stack.Peek());
+Console.WriteLine("Obtener el elemento de la pila");
+Console.WriteLine(stack.Pop());
+
+Console.WriteLine("Obtener el elemento de la pila sin eliminarlo");
+Console.WriteLine(stack.Peek());
+
+// params keyword
+
+Console.WriteLine($"\nUsando params keyword\n");
+
+var sum1 = Calculator.Sum(1, 2, 3, 4, 5);
+var sum2 = Calculator.Sum(10, 20, 30);
+Console.WriteLine($"sum1: {sum1}");
+Console.WriteLine($"sum2: {sum2}");
+
+// uso de metodos yield 
+
+IEnumerable<int>  GetSimpleNumber()
+{
+    yield return 2;
+    yield return 3;
+    yield return 5;
+    yield return 7;
+    yield return 11;
+    yield return 12;
+}
+// no se ejecuta hasta que se itera sobre el resultado
+foreach (var number in GetSimpleNumber())
+{
+    Console.WriteLine($"number : {number}");
+}
+
+var stringsWithDuplicates = new List<string>
+{
+    "apple",
+    "banana",
+    "apple",
+    "orange",
+    "banana",
+    "grape"
+};
+
+foreach (var item in Distinct<string>(stringsWithDuplicates))
+{
+    Console.WriteLine($"Distinct item: {item}");
+}
+
+
+IEnumerable<T> Distinct<T>(IEnumerable<T> input)
+{
+    var hashSet = new HashSet<T>();
+
+    foreach(var item in input)
+    {
+        if(!hashSet.Contains(item))
+        {
+            Console.WriteLine("current hashSet: " + string.Join(",", hashSet));
+            hashSet.Add(item);
+            yield return item;
+            Console.WriteLine($"Added item: {item}");
+        }
+    }
+}
+
+
+foreach (var number in GetBeforeFirstNegativeNumber(new List<int> { 1, 2, 3, -1, 4, 5 }))
+{
+    Console.WriteLine($"number before negative: {number}");
+}
+IEnumerable<int> GetBeforeFirstNegativeNumber(IEnumerable<int> numbers)
+{
+    foreach (var number in numbers)
+    {
+        if (number >= 0)
+        {
+            yield return number;
+        }
+        else yield break; // termina la iteracion
+    }
+}
+
+Console.ReadKey();
+
+public static class Calculator
+{
+    public static int Sum(params int[] numbers) => numbers.Sum();
+}
 
 public static class ListExtensions
 {
@@ -138,7 +294,7 @@ public static class ListExtensions
             else if (itemToFind.CompareTo(list[middleIndex]) < 0) // si devuelve menos 1 entonces el valor es menor 
             {
                 rightBound = middleIndex - 1;
-            } else  
+            } else
             {
                 leftBound = middleIndex + 1;
             }
@@ -149,6 +305,25 @@ public static class ListExtensions
         return null;
     }
 
+}
+
+class SpellCheck
+{
+    private readonly HashSet<string> correctWords = new()
+    {
+        "dog", "cat",
+        "house",
+        "tree"
+    };
+    public bool IsCorrect(string word) => this.correctWords.Contains(word);
+
+    public void AddWord(string word)
+    {
+        if (!this.correctWords.Contains(word))
+        {
+            this.correctWords.Add(word);
+        }
+    }
 }
 
 
@@ -219,4 +394,4 @@ class WordsEnumerator<T> : IEnumerator<T>
     {
         // No resources to dispose
     }   
-} 
+}
