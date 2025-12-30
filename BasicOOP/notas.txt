@@ -66,3 +66,17 @@ En POO los metodos privados no se heredan, son exclusivos de la clase donde se d
 Metodos protected se heredan, pero no son accesibles fuera de la jerarquía de herencia. No puedo usarlos en instancias de la clase base, solo en clases derivadas.
 Si un metodo o propiedad de una clase base tiene como modificador de acceso virtual, puede ser sobreescrito en las clases hijas
 usando override en sus metodos o propiedades que sobreescribren 
+
+Si una clase es internal solo es accesible dentro del mismo ensamblado (proyecto). No puede ser accedida desde otros proyectos o ensamblados.
+
+se pueden crear metodos publicos en clases internal, pero solo seran accesibles dentro del mismo ensamblado.
+
+El modificador de acceso de la clase siempre afecta a todos sus miembros.
+
+No pueden existir metodos publicos que devuelvan datos de clases internal.
+
+en C# char se representa con comillas simples 'A', mientras que las cadenas de texto (string) se representan con comillas dobles "Hola".
+Las cadenas en C# son inmutables, lo que significa que una vez creadas, no pueden ser modificadas. Cualquier operación que parezca modificar una cadena en realidad crea una nueva cadena.
+
+las cadenas en c# son referencias a objetos inmutables en memoria. Se comportan como tipos por valor en cuanto a su asignación y comparación, pero internamente son objetos.
+El operador ?? en C# se llama operador de fusión nula (null-coalescing operator). Se utiliza para proporcionar un valor predeterminado en caso de que una expresión sea null.

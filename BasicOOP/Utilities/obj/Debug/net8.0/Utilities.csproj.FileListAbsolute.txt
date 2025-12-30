@@ -1,0 +1,15 @@
+C:\Users\navem\source\repos\TodoList\BasicOOP\Utilities\bin\Debug\net8.0\Utilities.exe
+C:\Users\navem\source\repos\TodoList\BasicOOP\Utilities\bin\Debug\net8.0\Utilities.deps.json
+C:\Users\navem\source\repos\TodoList\BasicOOP\Utilities\bin\Debug\net8.0\Utilities.runtimeconfig.json
+C:\Users\navem\source\repos\TodoList\BasicOOP\Utilities\bin\Debug\net8.0\Utilities.dll
+C:\Users\navem\source\repos\TodoList\BasicOOP\Utilities\bin\Debug\net8.0\Utilities.pdb
+C:\Users\navem\source\repos\TodoList\BasicOOP\Utilities\obj\Debug\net8.0\Utilities.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\navem\source\repos\TodoList\BasicOOP\Utilities\obj\Debug\net8.0\Utilities.AssemblyInfoInputs.cache
+C:\Users\navem\source\repos\TodoList\BasicOOP\Utilities\obj\Debug\net8.0\Utilities.AssemblyInfo.cs
+C:\Users\navem\source\repos\TodoList\BasicOOP\Utilities\obj\Debug\net8.0\Utilities.csproj.CoreCompileInputs.cache
+C:\Users\navem\source\repos\TodoList\BasicOOP\Utilities\obj\Debug\net8.0\Utilities.sourcelink.json
+C:\Users\navem\source\repos\TodoList\BasicOOP\Utilities\obj\Debug\net8.0\Utilities.dll
+C:\Users\navem\source\repos\TodoList\BasicOOP\Utilities\obj\Debug\net8.0\refint\Utilities.dll
+C:\Users\navem\source\repos\TodoList\BasicOOP\Utilities\obj\Debug\net8.0\Utilities.pdb
+C:\Users\navem\source\repos\TodoList\BasicOOP\Utilities\obj\Debug\net8.0\Utilities.genruntimeconfig.cache
+C:\Users\navem\source\repos\TodoList\BasicOOP\Utilities\obj\Debug\net8.0\ref\Utilities.dll
